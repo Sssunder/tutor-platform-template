@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TutorPlatformConfig",
+  "type": "object",
+  "required": ["teacher", "contacts", "admin", "programs"],
+  "properties": {
+    "teacher": {
+      "type": "object",
+      "required": ["name", "initials", "subject", "subtitle", "targetAudience"],
+      "properties": {
+        "name": { "type": "string" },
+        "shortName": { "type": "string" },
+        "initials": { "type": "string" },
+        "subject": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "targetAudience": { "type": "string" },
+        "experienceYears": { "type": "string" },
+        "resultsStat": { "type": "string" }
+      }
+    },
+    "contacts": {
+      "type": "object",
+      "required": ["phone", "phoneRaw", "maxUrl", "telegramHandle", "telegramUrl"],
+      "properties": {
+        "phone": { "type": "string" },
+        "phoneRaw": { "type": "string" },
+        "maxUrl": { "type": "string" },
+        "telegramHandle": { "type": "string" },
+        "telegramUrl": { "type": "string" }
+      }
+    },
+    "admin": {
+      "type": "object",
+      "required": ["pinCode"],
+      "properties": {
+        "pinCode": { "type": "string" }
+      }
+    },
+    "programs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "price", "duration", "desc"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "price": { "type": "number" },
+          "duration": { "type": "string" },
+          "desc": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2475 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Мария Дружинина — Мария Дружинина — Математика и геометрия | 5–9 классы • ОГЭ</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Caveat:wght@600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: {
+                            50: '#FDFBF7',
+                            100: '#FBF7EE',
+                            200: '#F5EEDD',
+                            300: '#EBDDC5',
+                        },
+                        peach: {
+                            light: '#FFF0EA',
+                            DEFAULT: '#FF7A50',
+                            hover: '#E8663C',
+                        },
+                        sage: {
+                            light: '#EDF5F0',
+                            DEFAULT: '#487A60',
+                        },
+                        slateDark: '#1E2530',
+                    },
+                    fontFamily: {
+                        sans: ['"Nunito"', 'sans-serif'],
+                        hand: ['"Caveat"', 'cursive'],
+                        display: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* ==============================================================
+           MARIA DRUZHININA MULTI-THEME ARCHITECTURE & INTERACTIVES
+           ============================================================== */
+        :root, [data-theme="cozy-cat"] {
+            --bg-page: #FDFBF7;
+            --bg-card: #FFFFFF;
+            --bg-elevated: #FFF0EA;
+            --bg-input: #FFFFFF;
+            --color-accent: #FF7A50;
+            --color-accent-hover: #E8663C;
+            --color-accent-text: #FFFFFF;
+            --text-heading: #1E2530;
+            --text-body: #334155;
+            --text-muted: #64748B;
+            --border-color: rgba(235, 221, 197, 0.9);
+            --border-subtle: rgba(255, 122, 80, 0.25);
+            --glow: 0 16px 40px -10px rgba(255, 122, 80, 0.16);
+            --hero-mesh: radial-gradient(at 0% 0%, #FFF3EC 0px, transparent 50%),
+                         radial-gradient(at 100% 0%, #F3EDFF 0px, transparent 50%),
+                         radial-gradient(at 100% 100%, #EBF7EE 0px, transparent 50%),
+                         radial-gradient(at 0% 100%, #FFF7E6 0px, transparent 50%);
+            --scrollbar-track: #FDFBF7;
+            --scrollbar-thumb: #FF7A50;
+        }
+
+        [data-theme="sakura"] {
+            --bg-page: #FFF5F7;
+            --bg-card: #FFFFFF;
+            --bg-elevated: #FFE4EC;
+            --bg-input: #FFFFFF;
+            --color-accent: #EC4899;
+            --color-accent-hover: #DB2777;
+            --color-accent-text: #FFFFFF;
+            --text-heading: #2E1065;
+            --text-body: #4C1D95;
+            --text-muted: #831843;
+            --border-color: rgba(244, 114, 182, 0.4);
+            --border-subtle: rgba(236, 72, 153, 0.25);
+            --glow: 0 16px 40px -10px rgba(236, 72, 153, 0.22);
+            --hero-mesh: radial-gradient(at 0% 0%, #FCE7F3 0px, transparent 50%),
+                         radial-gradient(at 100% 0%, #F3E8FF 0px, transparent 50%),
+                         radial-gradient(at 100% 100%, #FFE4E6 0px, transparent 50%),
+                         radial-gradient(at 0% 100%, #FFF1F2 0px, transparent 50%);
+            --scrollbar-track: #FFF5F7;
+            --scrollbar-thumb: #EC4899;
+        }
+
+        [data-theme="artek"] {
+            --bg-page: #F0FDF4;
+            --bg-card: #FFFFFF;
+            --bg-elevated: #CCFBF1;
+            --bg-input: #FFFFFF;
+            --color-accent: #0D9488;
+            --color-accent-hover: #0F766E;
+            --color-accent-text: #FFFFFF;
+            --text-heading: #0F291E;
+            --text-body: #134E4A;
+            --text-muted: #115E59;
+            --border-color: rgba(13, 148, 136, 0.35);
+            --border-subtle: rgba(13, 148, 136, 0.2);
+            --glow: 0 16px 40px -10px rgba(13, 148, 136, 0.22);
+            --hero-mesh: radial-gradient(at 0% 0%, #CCFBF1 0px, transparent 50%),
+                         radial-gradient(at 100% 0%, #FEF3C7 0px, transparent 50%),
+                         radial-gradient(at 100% 100%, #DCFCE7 0px, transparent 50%),
+                         radial-gradient(at 0% 100%, #E0F2FE 0px, transparent 50%);
+            --scrollbar-track: #F0FDF4;
+            --scrollbar-thumb: #0D9488;
+        }
+
+        [data-theme="cyber"] {
+            --bg-page: #0B0F19;
+            --bg-card: #111827;
+            --bg-elevated: #1E293B;
+            --bg-input: #0F172A;
+            --color-accent: #06B6D4;
+            --color-accent-hover: #22D3EE;
+            --color-accent-text: #0B0F19;
+            --text-heading: #F8FAFC;
+            --text-body: #CBD5E1;
+            --text-muted: #94A3B8;
+            --border-color: rgba(6, 182, 212, 0.35);
+            --border-subtle: rgba(6, 182, 212, 0.2);
+            --glow: 0 0 35px -8px rgba(6, 182, 212, 0.3);
+            --hero-mesh: radial-gradient(at 0% 0%, rgba(6, 182, 212, 0.2) 0px, transparent 50%),
+                         radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.2) 0px, transparent 50%),
+                         radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.15) 0px, transparent 50%),
+                         #0B0F19;
+            --scrollbar-track: #0B0F19;
+            --scrollbar-thumb: #06B6D4;
+        }
+
+        /* --- Scrollbar --- */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+        ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 4px; }
+
+        /* --- Mobile Responsive Invariants --- */
+        html, body {
+            max-width: 100vw;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* --- Global Bindings --- */
+        body {
+            background-color: var(--bg-page) !important;
+            color: var(--text-body) !important;
+            transition: background-color 0.25s ease, color 0.25s ease;
+        }
+
+        .glass-panel {
+            background: var(--bg-card) !important;
+            border-color: var(--border-color) !important;
+            box-shadow: var(--glow) !important;
+        }
+
+        header {
+            background-color: var(--bg-card) !important;
+            border-color: var(--border-color) !important;
+        }
+
+        .hero-mesh {
+            background: var(--hero-mesh) !important;
+        }
+
+        .blob-shadow {
+            box-shadow: var(--glow) !important;
+        }
+
+        /* --- Universal Surface & Card Backgrounds --- */
+        [class*="bg-white"], 
+        .bg-white, 
+        .theme-card,
+        [class*="bg-cream-50"] {
+            background-color: var(--bg-card) !important;
+            border-color: var(--border-color) !important;
+        }
+
+        [class*="bg-cream-100"], 
+        [class*="bg-cream-200"], 
+        [class*="bg-peach-light"], 
+        .theme-elevated {
+            background-color: var(--bg-elevated) !important;
+            border-color: var(--border-color) !important;
+        }
+
+        /* --- Universal Text Legibility Across All Themes --- */
+        /* 1. All headings and primary titles */
+        h1, h2, h3, h4, h5, h6,
+        [class*="font-display"],
+        [class*="text-slateDark"],
+        .text-heading-theme {
+            color: var(--text-heading) !important;
+        }
+
+        /* 2. Body text and standard descriptions */
+        p,
+        [class*="text-slateDark/8"],
+        [class*="text-slateDark/75"],
+        [class*="text-slateDark/70"],
+        [class*="text-slateDark/7"],
+        .text-body-theme {
+            color: var(--text-body) !important;
+        }
+
+        /* 3. Muted hints, small notes and secondary stats */
+        [class*="text-slateDark/60"],
+        [class*="text-slateDark/6"],
+        [class*="text-slateDark/50"],
+        [class*="text-slateDark/5"],
+        [class*="text-slateDark/40"],
+        [class*="text-slateDark/4"],
+        [class*="text-slate-400"],
+        [class*="text-slate-500"],
+        .text-muted-theme {
+            color: var(--text-muted) !important;
+        }
+
+        /* 4. Explicit Cyber/Dark Mode Overrides */
+        [data-theme="cyber"] [class*="bg-white"],
+        [data-theme="cyber"] #quizSection,
+        [data-theme="cyber"] .glass-panel,
+        [data-theme="cyber"] #catSayanCard,
+        [data-theme="cyber"] #photoModal > div,
+        [data-theme="cyber"] #pinModal > div,
+        [data-theme="cyber"] #manualAddModal > div,
+        [data-theme="cyber"] #confirmModal > div {
+            background-color: #111827 !important;
+            border-color: rgba(6, 182, 212, 0.35) !important;
+            color: #CBD5E1 !important;
+        }
+        [data-theme="cyber"] [class*="bg-peach-light"],
+        [data-theme="cyber"] [class*="bg-cream-100"] {
+            background-color: #1F2937 !important;
+            border-color: rgba(6, 182, 212, 0.25) !important;
+        }
+        [data-theme="cyber"] #catSpeechBubble {
+            background-color: #1F2937 !important;
+            color: #F8FAFC !important;
+            border-color: #06B6D4 !important;
+        }
+        [data-theme="cyber"] #catSpeechBubble > div:last-child {
+            background-color: #1F2937 !important;
+            border-color: #06B6D4 !important;
+        }
+        [data-theme="cyber"] [class*="text-slateDark"] {
+            color: #F8FAFC !important;
+        }
+        [data-theme="cyber"] p,
+        [data-theme="cyber"] [class*="text-slateDark/8"],
+        [data-theme="cyber"] [class*="text-slateDark/75"],
+        [data-theme="cyber"] [class*="text-slateDark/7"] {
+            color: #CBD5E1 !important;
+        }
+        [data-theme="cyber"] [class*="text-slateDark/6"],
+        [data-theme="cyber"] [class*="text-slateDark/5"] {
+            color: #94A3B8 !important;
+        }
+
+        /* Apple-style Frosted Header Dropdown */
+        #headerThemePopover {
+            transform-origin: top right;
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.12), 0 0 1px 1px rgba(0, 0, 0, 0.05);
+        }
+        [data-theme="cyber"] #headerThemePopover {
+            background-color: #111827 !important;
+            border-color: rgba(6, 182, 212, 0.35) !important;
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(6, 182, 212, 0.15) !important;
+        }
+        [data-theme="cyber"] #headerThemePopover button:hover {
+            background-color: #1F2937 !important;
+        }
+        [data-theme="cyber"] #headerThemePopover .text-slateDark {
+            color: #F8FAFC !important;
+        }
+        [data-theme="cyber"] #headerThemePopover .text-slateDark\/60,
+        [data-theme="cyber"] #headerThemePopover .text-slateDark\/50 {
+            color: #94A3B8 !important;
+        }
+        [data-theme="cyber"] #headerThemeMenuBtn,
+        [data-theme="cyber"] #soundToggleBtn {
+            background-color: #111827 !important;
+            border-color: rgba(6, 182, 212, 0.35) !important;
+            color: #F8FAFC !important;
+        }
+        [data-theme="cyber"] a[title*="МАКС"] {
+            background-color: #0F223D !important;
+            border-color: #0077FF !important;
+            color: #60A5FA !important;
+        }
+        [data-theme="cyber"] a[title*="Telegram"] {
+            background-color: #0E2738 !important;
+            border-color: #2AABEE !important;
+            color: #7DD3FC !important;
+        }
+        /* Quiz option buttons in Cyber mode (DO NOT override CTA action buttons!) */
+        [data-theme="cyber"] #quizStep1 button,
+        [data-theme="cyber"] #quizStep2 button,
+        [data-theme="cyber"] #quizStep3 button {
+            background-color: #111827 !important;
+            border-color: rgba(6, 182, 212, 0.3) !important;
+        }
+        [data-theme="cyber"] #quizStep1 button:hover,
+        [data-theme="cyber"] #quizStep2 button:hover,
+        [data-theme="cyber"] #quizStep3 button:hover {
+            border-color: #06B6D4 !important;
+            background-color: #1A2436 !important;
+        }
+
+        /* Quiz Result Card in Cyber Mode */
+        [data-theme="cyber"] #quizResult {
+            background-color: #111827 !important;
+            border-color: rgba(6, 182, 212, 0.4) !important;
+        }
+        [data-theme="cyber"] #quizResult .bg-peach {
+            background-color: #06B6D4 !important;
+            color: #080D1A !important;
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.45) !important;
+        }
+        [data-theme="cyber"] #quizResult .bg-peach:hover {
+            background-color: #22D3EE !important;
+            color: #080D1A !important;
+        }
+        [data-theme="cyber"] #quizResult button:not(.bg-peach) {
+            background-color: #1E293B !important;
+            border-color: rgba(6, 182, 212, 0.3) !important;
+            color: #F8FAFC !important;
+        }
+
+        .text-peach {
+            color: var(--color-accent) !important;
+        }
+        .bg-peach, button.bg-peach, a.bg-peach {
+            background-color: var(--color-accent) !important;
+            color: var(--color-accent-text) !important;
+        }
+        .bg-peach:hover, button.bg-peach:hover, a.bg-peach:hover, .hover\:bg-peach-hover:hover {
+            filter: brightness(1.1);
+        }
+
+        .border-cream-200, .border-cream-300 {
+            border-color: var(--border-color) !important;
+        }
+
+        /* Inputs */
+        input, select {
+            background-color: var(--bg-input) !important;
+            color: var(--text-heading) !important;
+            border-color: var(--border-color) !important;
+        }
+
+        /* Theme Buttons */
+        .theme-btn {
+            color: var(--text-muted);
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+        .theme-btn:hover {
+            color: var(--text-heading);
+            background: rgba(125, 125, 125, 0.1);
+        }
+        .theme-btn.active {
+            background-color: var(--color-accent) !important;
+            color: var(--color-accent-text) !important;
+            box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.2);
+            font-weight: 800;
+        }
+
+        /* Floating Hearts on Petting Sayan */
+        @keyframes floatHeart {
+            0% {
+                opacity: 1;
+                transform: translate(0, 0) scale(0.6) rotate(0deg);
+            }
+            50% {
+                opacity: 0.95;
+                transform: translate(var(--tx, 15px), -45px) scale(1.2) rotate(15deg);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(var(--tx, 25px), -90px) scale(0.9) rotate(-10deg);
+            }
+        }
+        .floating-heart {
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            font-size: 26px;
+            animation: floatHeart 1.1s cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
+            filter: drop-shadow(0 2px 6px rgba(0,0,0,0.25));
+        }
+
+        /* Speech bubble */
+        #catSpeechBubble.visible {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+            pointer-events: auto !important;
+        }
+
+        /* Photo Studio Pulse */
+        @keyframes cameraPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .camera-pulse {
+            animation: cameraPulse 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-cream-50 text-slateDark font-sans antialiased min-h-screen selection:bg-peach selection:text-white">
+
+    <!-- Teacher Admin Floating Sticky Bar when logged in -->
+    <div id="teacherStickyBar" class="hidden sticky top-0 z-50 bg-slateDark text-white py-2.5 px-4 text-xs shadow-lg border-b border-white/10 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="font-bold">Кабинет Марии активирован</span>
+            <span class="text-white/60 hidden sm:inline">• Режим управления расписанием</span>
+        </div>
+        <div class="flex items-center gap-2">
+            <button onclick="toggleTeacherModeView()" id="toggleViewBtn" class="px-3 py-1 rounded-lg bg-white/15 hover:bg-white/25 text-white font-bold transition-all">
+                Тетрадка преподавателя
+            </button>
+            <button onclick="logoutTeacher()" class="px-2.5 py-1 rounded-lg bg-rose-500/30 hover:bg-rose-500 text-rose-200 hover:text-white font-semibold transition-all">
+                Выйти
+            </button>
+        </div>
+    </div>
+
+    <!-- Top Announcement Bar with Cat Sayan -->
+    <div id="topAnnouncement" class="bg-gradient-to-r from-peach via-amber-400 to-peach text-white py-1.5 px-3 text-[11px] sm:text-xs font-bold text-center tracking-wide flex flex-wrap items-center justify-center gap-x-2 gap-y-0.5 shadow-sm">
+        <span class="truncate max-w-[280px] sm:max-w-none">🐾 Кот Саян: набор в группы ОГЭ 2026/2027 • Вводный урок бесплатно</span>
+        <a href="#booking" class="underline decoration-white/70 hover:decoration-white flex-shrink-0">Занять место &rarr;</a>
+    </div>
+
+    <!-- CLIENT VIEW CONTAINER -->
+    <div id="clientView">
+
+        <!-- Navigation Bar -->
+        <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-cream-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
+                <!-- Brand -->
+                <div class="flex items-center gap-2.5 sm:gap-3.5 min-w-0">
+                    <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-2xl bg-peach-light border border-peach/30 flex items-center justify-center text-lg sm:text-2xl shadow-sm flex-shrink-0">
+                        🐱
+                    </div>
+                    <div class="min-w-0">
+                        <span class="font-display font-extrabold text-sm sm:text-lg tracking-tight text-slateDark block leading-none whitespace-nowrap">
+                            Мария Дружинина
+                        </span>
+                        <span class="text-[10px] sm:text-[11px] font-semibold text-peach hidden xl:block whitespace-nowrap mt-1">
+                            Архитектор математического мышления • 5–9 классы
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Quick Messengers, Theme Selector & Header CTA (Apple-Style Minimalist Bar) -->
+                <div class="flex items-center gap-1.5 sm:gap-3 flex-shrink-0">
+                    
+                    <!-- Apple-Style Minimalist Theme Dropdown (Desktop & Tablet) -->
+                    <div class="relative hidden sm:block" id="headerThemeDropdownWrap">
+                        <button onclick="toggleHeaderThemeMenu(event)" id="headerThemeMenuBtn" class="flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-cream-200 text-xs font-bold bg-white/80 backdrop-blur-md shadow-sm hover:border-peach transition-all active:scale-95" title="Выбрать стиль оформления">
+                            <i data-lucide="palette" class="w-3.5 h-3.5 text-peach"></i>
+                            <span id="headerThemeActiveEmoji">🐱</span>
+                            <span id="headerThemeActiveLabel" class="hidden lg:inline font-bold">Саян</span>
+                            <svg class="w-3 h-3 opacity-60 ml-0.5 transition-transform" id="headerThemeChevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+                        </button>
+                        <div id="headerThemePopover" class="hidden absolute right-0 top-full mt-2 w-64 p-2 rounded-2xl bg-white/95 backdrop-blur-2xl border border-cream-300 shadow-2xl z-50 space-y-1">
+                            <div class="px-3 py-1 text-[10px] font-black uppercase tracking-wider text-slateDark/50">
+                                Стили оформления
+                            </div>
+                            <button onclick="selectHeaderTheme('cozy-cat')" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-left hover:bg-peach/10 transition-colors" data-popover-theme="cozy-cat">
+                                <span class="flex items-center gap-2">
+                                    <span class="text-base">🐱</span>
+                                    <span>
+                                        <span class="block text-slateDark font-extrabold leading-tight">Уютный Саян</span>
+                                        <span class="block text-[10px] text-slateDark/60 font-normal">Теплый персик & домашний уют</span>
+                                    </span>
+                                </span>
+                                <span class="theme-check text-peach font-black text-sm">✓</span>
+                            </button>
+                            <button onclick="selectHeaderTheme('sakura')" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-left hover:bg-pink-50 transition-colors" data-popover-theme="sakura">
+                                <span class="flex items-center gap-2">
+                                    <span class="text-base">🌸</span>
+                                    <span>
+                                        <span class="block text-slateDark font-extrabold leading-tight">Нежная Сакура</span>
+                                        <span class="block text-[10px] text-slateDark/60 font-normal">Пастельно-розовый & аниме</span>
+                                    </span>
+                                </span>
+                                <span class="theme-check text-pink-500 font-black text-sm hidden">✓</span>
+                            </button>
+                            <button onclick="selectHeaderTheme('artek')" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-left hover:bg-emerald-50 transition-colors" data-popover-theme="artek">
+                                <span class="flex items-center gap-2">
+                                    <span class="text-base">🏕</span>
+                                    <span>
+                                        <span class="block text-slateDark font-extrabold leading-tight">Лазурный Артек</span>
+                                        <span class="block text-[10px] text-slateDark/60 font-normal">Морской бриз & изумруд</span>
+                                    </span>
+                                </span>
+                                <span class="theme-check text-teal-600 font-black text-sm hidden">✓</span>
+                            </button>
+                            <button onclick="selectHeaderTheme('cyber')" class="w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold text-left hover:bg-cyan-50 transition-colors" data-popover-theme="cyber">
+                                <span class="flex items-center gap-2">
+                                    <span class="text-base">🌌</span>
+                                    <span>
+                                        <span class="block text-slateDark font-extrabold leading-tight">Кибер-Неон</span>
+                                        <span class="block text-[10px] text-slateDark/60 font-normal">Глубокий темный & неон</span>
+                                    </span>
+                                </span>
+                                <span class="theme-check text-cyan-400 font-black text-sm hidden">✓</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Theme Trigger in Header -->
+                    <button onclick="toggleMobileThemeDock(true)" class="sm:hidden w-8 h-8 rounded-full border border-cream-200 text-xs font-bold hover:border-peach transition-colors flex items-center justify-center p-1.5" title="Сменить стиль оформления">
+                        <i data-lucide="palette" class="w-4 h-4 text-peach"></i>
+                    </button>
+
+                    <!-- Sound FX Toggle Button (Apple Minimalist Pill) -->
+                    <button onclick="toggleSound()" id="soundToggleBtn" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-cream-200 text-xs font-bold hover:border-peach bg-white/80 backdrop-blur-md shadow-sm transition-all flex items-center justify-center active:scale-95" title="Звуки кликов и мурчания">
+                        <span id="soundIcon">🔊</span>
+                    </button>
+
+                    <!-- MAX Messenger Button (Apple Pill, Real Phone Link) -->
+                    <a href="https://max.ru/u/+79195784289" target="_blank" title="Написать Марии в МАКС (+7 919 578 42 89)" class="hidden lg:flex px-3.5 py-1.5 rounded-full bg-blue-50 hover:bg-blue-100 text-[#0077FF] border border-[#0077FF]/25 font-bold text-xs items-center gap-1.5 transition-all shadow-sm active:scale-95">
+                        <span class="w-2 h-2 rounded-full bg-[#0077FF] animate-pulse"></span>
+                        <span>МАКС</span>
+                    </a>
+
+                    <!-- Telegram Button (Apple Pill, Real @mm_kami Handle) -->
+                    <a href="https://t.me/mm_kami" target="_blank" title="Написать Марии в Telegram (@mm_kami)" class="hidden lg:flex px-3.5 py-1.5 rounded-full bg-sky-50 hover:bg-sky-100 text-[#2AABEE] border border-[#2AABEE]/25 font-bold text-xs items-center gap-1.5 transition-all shadow-sm active:scale-95">
+                        <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                        <span>Telegram</span>
+                    </a>
+
+                    <a href="#booking" class="px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-peach hover:bg-peach-hover text-white font-extrabold text-xs shadow-md shadow-peach/25 transition-all flex items-center gap-1.5 active:scale-95">
+                        <span class="hidden sm:inline">Пробный урок</span>
+                        <span class="sm:hidden text-[11px] font-black">Урок</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-5xl mx-auto px-3.5 sm:px-6 py-6 sm:py-10 space-y-12 sm:space-y-16 pb-28 sm:pb-16">
+
+            <!-- HERO SECTION: Maria + Cat Sayan + Custom Generated Banner -->
+            <section class="glass-panel rounded-3xl p-4 sm:p-10 blob-shadow relative overflow-hidden hero-mesh">
+                
+                <!-- Atmospheric Aesthetic Banner -->
+                <div class="relative w-full h-40 sm:h-56 rounded-2xl overflow-hidden mb-6 sm:mb-8 border border-cream-200 shadow-inner">
+                    <img src="assets/hero_banner.jpg" alt="Уютное рабочее пространство репетитора и кот Саян" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-r from-slateDark/80 via-slateDark/40 to-transparent flex items-center p-4 sm:p-8">
+                        <div class="max-w-md text-white space-y-1.5 sm:space-y-2">
+                            <div class="inline-flex items-center gap-1.5 px-3 py-0.5 sm:py-1 rounded-full bg-peach/90 backdrop-blur-sm text-[10px] sm:text-[11px] font-extrabold tracking-wide uppercase">
+                                ✨ Набор на 2026/2027 учебный год
+                            </div>
+                            <h2 class="font-display text-lg sm:text-2xl font-black leading-tight text-white">
+                                Уютные уроки геометрии и алгебры в компании кота Саяна
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center relative">
+                    
+                    <!-- Left: Headline & Trust Chips -->
+                    <div class="md:col-span-7 space-y-4">
+                        <h1 class="font-display text-2xl sm:text-4xl font-extrabold text-slateDark leading-tight tracking-tight">
+                            Математика и геометрия 
+                            <span class="text-peach relative">без слёз
+                                <svg class="absolute -bottom-1 left-0 w-full" viewBox="0 0 120 8" fill="none"><path d="M2 6C35 2 85 2 118 6" stroke="#FF7A50" stroke-width="3" stroke-linecap="round"/></svg>
+                            </span> 
+                            и страха перед доской
+                        </h1>
+
+                        <p class="text-xs sm:text-base text-slateDark/80 leading-relaxed font-medium">
+                            Учу понимать логику формул, а не зубрить их наизусть. Разбираем геометрию на понятных визуальных ассоциациях и жизненных примерах. Спокойно и уверенно готовимся к <strong>ОГЭ на 4 и 5</strong>.
+                        </p>
+
+                        <!-- Credentials Badges -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-1">
+                            <div class="p-3 sm:p-3.5 rounded-2xl bg-white/90 border border-cream-200 flex items-start gap-3 shadow-sm">
+                                <span class="text-2xl">🎓</span>
+                                <div>
+                                    <div class="font-bold text-xs text-slateDark">Пед. диплом + Магистратура</div>
+                                    <div class="text-[11px] text-slateDark/70">Архитектор математического мышления • 5–9 классы</div>
+                                </div>
+                            </div>
+
+                            <div class="p-3 sm:p-3.5 rounded-2xl bg-white/90 border border-cream-200 flex items-start gap-3 shadow-sm">
+                                <span class="text-2xl">🏕</span>
+                                <div>
+                                    <div class="font-bold text-xs text-slateDark">Опыт работы в МДЦ «Артек»</div>
+                                    <div class="text-[11px] text-slateDark/70">Умею увлечь и найти подход к любому подростку</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons & Messenger Links (Responsive Mobile + Desktop) -->
+                        <div class="flex flex-wrap items-center gap-2.5 sm:gap-3 pt-2">
+                            <a href="#booking" class="w-full sm:w-auto justify-center px-6 py-3.5 rounded-2xl bg-peach hover:bg-peach-hover text-white font-extrabold text-xs sm:text-sm shadow-md shadow-peach/25 transition-all flex items-center gap-2">
+                                <span>Выбрать удобное время</span>
+                                <i data-lucide="sparkles" class="w-4 h-4"></i>
+                            </a>
+                            <div class="flex items-center gap-2 w-full sm:w-auto">
+                                <a href="https://max.ru/u/+79195784289" target="_blank" title="Написать в МАКС (+7 919 578 42 89)" class="flex-1 sm:flex-initial justify-center px-4 py-3 sm:py-3.5 rounded-2xl bg-blue-50 border border-blue-200 hover:bg-blue-100 text-[#0077FF] font-bold text-xs flex items-center gap-2 transition-colors">
+                                    <span class="w-2 h-2 rounded-full bg-[#0077FF] animate-pulse"></span>
+                                    <span>Написать в МАКС</span>
+                                </a>
+                                <a href="https://t.me/mm_kami" target="_blank" title="Написать в Telegram (@mm_kami)" class="flex-1 sm:flex-initial justify-center px-4 py-3 sm:py-3.5 rounded-2xl bg-sky-50 border border-sky-200 hover:bg-sky-100 text-[#2AABEE] font-bold text-xs flex items-center gap-2 transition-colors">
+                                    <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                                    <span>Telegram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Visual Cards (Maria & Cat Sayan Interactive Studio) -->
+                    <div class="md:col-span-5 relative flex flex-col items-center">
+                        
+                        <!-- Main Photo of Maria with Interactive Avatar Customizer -->
+                        <div id="mariaPortraitContainer" class="relative w-64 sm:w-72 h-80 sm:h-88 rounded-3xl overflow-hidden shadow-2xl border-4 border-white rotate-1 hover:rotate-0 transition-transform duration-500 group">
+                            <!-- Photo Customizer Button (High Contrast Pill) -->
+                            <button onclick="openPhotoModal()" class="camera-pulse absolute top-3 right-3 px-3.5 py-1.5 rounded-full bg-slate-900/85 backdrop-blur-md border border-white/30 text-[11px] font-extrabold text-white shadow-xl hover:scale-105 transition-all flex items-center gap-1.5 z-20 cursor-pointer" title="Сменить образ / фото">
+                                <i data-lucide="camera" class="w-3.5 h-3.5 text-amber-300"></i>
+                                <span class="tracking-wide">Примерка фото</span>
+                            </button>
+
+                            <img id="mariaMainPortrait" src="assets/maria_fountain.jpg" alt="Мария Дружинина — репетитор" class="w-full h-full object-cover transition-all duration-300">
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-slateDark/85 via-slateDark/25 to-transparent flex items-end p-4">
+                                <div class="text-white">
+                                    <div class="font-display font-extrabold text-base" id="portraitLabelName">Мария Дружинина</div>
+                                    <div class="text-[11px] opacity-90" id="portraitLabelSub">Твой проводник в мир геометрии 📐</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Sayan Speech Bubble (Positioned ABOVE Sayan so it never clips) -->
+                        <div id="catSpeechBubble" class="absolute bottom-20 -left-2 sm:-left-6 max-w-[270px] bg-white rounded-2xl p-3 shadow-2xl border-2 border-peach/40 text-xs text-slateDark font-bold z-30 transition-all opacity-0 pointer-events-none transform translate-y-2">
+                            <div class="flex items-start gap-2">
+                                <span class="text-base flex-shrink-0">🐾</span>
+                                <div id="catSpeechText">Мяу! Погладь меня, чтобы сдать ОГЭ на 5!</div>
+                            </div>
+                            <div class="absolute -bottom-2 left-10 w-3.5 h-3.5 bg-white border-b-2 border-r-2 border-peach/40 transform rotate-45"></div>
+                        </div>
+
+                        <!-- Floating Card: Cat Sayan (Interactive Petting & Sound) -->
+                        <div id="catSayanCard" onclick="petCatSayan(event)" class="absolute -bottom-6 -left-4 sm:-left-6 p-3 rounded-2xl bg-white shadow-2xl border border-cream-200 flex items-center gap-3 -rotate-2 hover:rotate-0 transition-all cursor-pointer group select-none hover:shadow-peach/20" title="Кликни, чтобы погладить кота Саяна!">
+                            <div class="relative">
+                                <img id="catSayanAvatarImg" src="assets/cat_sayan.jpg" alt="Кот Саян" class="w-14 h-14 rounded-xl object-cover shadow-sm group-hover:scale-105 transition-transform">
+                                <span class="absolute -bottom-1 -right-1 text-xs">🐾</span>
+                            </div>
+                            <div class="pr-2">
+                                <div class="flex items-center gap-1.5 font-extrabold text-xs text-slateDark">
+                                    <span>Кот Саян</span>
+                                    <span id="catPetsCountBadge" class="text-[10px] px-1.5 py-0.5 rounded-full bg-peach-light text-peach font-black">0 лапок</span>
+                                </div>
+                                <div class="text-[11px] text-peach font-bold">Главный контролёр домашек</div>
+                                <div class="text-[10px] text-slateDark/60 flex items-center gap-1 mt-0.5">
+                                    <span>Погладь меня</span>
+                                    <span class="inline-block animate-pulse">✨</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- METHODOLOGY -->
+            <section class="space-y-4">
+                <div class="text-center max-w-lg mx-auto space-y-1">
+                    <span class="text-xs font-extrabold text-peach uppercase tracking-wider">Методика архитектора мышления</span>
+                    <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slateDark">Почему у моих учеников всё получается?</h2>
+                    <p class="text-xs text-slateDark/70">Математика — это не про зубрёжку сотен формул, а про умение видеть закономерности</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    
+                    <div class="p-5 rounded-3xl bg-white border border-cream-200 shadow-sm space-y-2 hover:border-peach transition-colors">
+                        <div class="w-10 h-10 rounded-2xl bg-peach-light text-peach flex items-center justify-center text-xl font-bold">
+                            🧩
+                        </div>
+                        <h3 class="font-display font-extrabold text-base text-slateDark">Понятные ассоциации</h3>
+                        <p class="text-xs text-slateDark/75 leading-relaxed">
+                            Никакого заумного языка. Объясняю синусы, дроби и функции через бытовые аналогии, графику и жизненные примеры.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-3xl bg-white border border-cream-200 shadow-sm space-y-2 hover:border-peach transition-colors">
+                        <div class="w-10 h-10 rounded-2xl bg-sage-light text-sage flex items-center justify-center text-xl font-bold">
+                            📐
+                        </div>
+                        <h3 class="font-display font-extrabold text-base text-slateDark">Любовь к геометрии</h3>
+                        <p class="text-xs text-slateDark/75 leading-relaxed">
+                            90% школьников ненавидят доказательства. Мы учимся видеть чертёж как детективную загадку, где каждая теорема — это подсказка.
+                        </p>
+                    </div>
+
+                    <div class="p-5 rounded-3xl bg-white border border-cream-200 shadow-sm space-y-2 hover:border-peach transition-colors">
+                        <div class="w-10 h-10 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center text-xl font-bold">
+                            🐱
+                        </div>
+                        <h3 class="font-display font-extrabold text-base text-slateDark">Атмосфера без стресса</h3>
+                        <p class="text-xs text-slateDark/75 leading-relaxed">
+                            На уроках можно ошибаться, задавать «глупые» вопросы и не бояться осуждения. Кот Саян гарантирует спокойствие на каждом созвоне.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- INTERACTIVE 30-SECOND MATH QUIZ / ТЕСТ-АРХЕТИП -->
+            <section id="quizSection" class="glass-panel rounded-3xl p-6 sm:p-8 blob-shadow space-y-6 border border-cream-200">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-cream-200">
+                    <div class="space-y-1">
+                        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-peach-light text-peach text-xs font-black">
+                            <span>✨ Интерактив за 20 секунд</span>
+                        </div>
+                        <h2 class="font-display text-xl sm:text-2xl font-extrabold text-slateDark">
+                            Какой ты математический супергерой?
+                        </h2>
+                        <p class="text-xs text-slateDark/70">
+                            Ответь на 3 вопроса — кот Саян и Мария подберут твою суперсилу и идеальный формат подготовки
+                        </p>
+                    </div>
+
+                    <!-- Progress Indicator -->
+                    <div class="flex items-center gap-1.5 self-start sm:self-auto">
+                        <span id="quizStepPill1" class="w-7 h-2 rounded-full bg-peach transition-all"></span>
+                        <span id="quizStepPill2" class="w-7 h-2 rounded-full bg-cream-300 transition-all"></span>
+                        <span id="quizStepPill3" class="w-7 h-2 rounded-full bg-cream-300 transition-all"></span>
+                    </div>
+                </div>
+
+                <!-- Quiz Card Body -->
+                <div id="quizContent" class="space-y-4">
+                    <!-- Step 1 -->
+                    <div id="quizStep1" class="space-y-4">
+                        <h3 class="font-display font-extrabold text-base text-slateDark">
+                            1. Что вызывает больше всего паники на уроках геометрии и алгебры?
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <button onclick="answerQuiz(1, 'geo')" class="p-4 rounded-2xl bg-white border border-cream-200 text-left hover:border-peach hover:shadow-md transition-all text-xs font-bold text-slateDark flex items-start gap-3">
+                                <span class="text-xl">📐</span>
+                                <div>
+                                    <div class="font-extrabold">Чертёж и доказательства</div>
+                                    <div class="text-[11px] text-slateDark/60 font-normal">Не вижу дополнительные построения и путаю признаки</div>
+                                </div>
+                            </button>
+                            <button onclick="answerQuiz(1, 'alg')" class="p-4 rounded-2xl bg-white border border-cream-200 text-left hover:border-peach hover:shadow-md transition-all text-xs font-bold text-slateDark flex items-start gap-3">
+                                <span class="text-xl">🧮</span>
+                                <div>
+                                    <div class="font-extrabold">Дроби, корни и уравнения</div>
+                                    <div class="text-[11px] text-slateDark/60 font-normal">Глупые вычислительные ошибки в 1-й части</div>
+                                </div>
+                            </button>
+                            <button onclick="answerQuiz(1, 'oge')" class="p-4 rounded-2xl bg-white border border-cream-200 text-left hover:border-peach hover:shadow-md transition-all text-xs font-bold text-slateDark flex items-start gap-3">
+                                <span class="text-xl">⏰</span>
+                                <div>
+                                    <div class="font-extrabold">Страх не успеть на ОГЭ</div>
+                                    <div class="text-[11px] text-slateDark/60 font-normal">Кажется, что времени мало, а в голове каша</div>
+                                </div>
+                            </button>
+                            <button onclick="answerQuiz(1, 'top')" class="p-4 rounded-2xl bg-white border border-cream-200 text-left hover:border-peach hover:shadow-md transition-all text-xs font-bold text-slateDark flex items-start gap-3">
+                                <span class="text-xl">🚀</span>
+                                <div>
+                                    <div class="font-extrabold">Хочу уверенную пятёрку</div>
+                                    <div class="text-[11px] text-slateDark/60 font-normal">База понятна, нужны сложные задачи №20–25</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 (hidden initially) -->
+                    <div id="quizStep2" class="space-y-4 hidden">
+                        <h3 class="font-display font-extrabold text-base text-slateDark">
+                            2. В какой компании тебе проще всего понимать сложные темы?
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <button onclick="answerQuiz(2, 'group')" class="p-4 rounded-2xl bg-white border border-cream-200 text-left hover:border-peach hover:shadow-md transition-all text-xs font-bold text-slateDark flex flex-col justify-between gap-2">
+                                <span class="text-2xl">👥</span>
+                                <div>
+                                    <div class="font-extrabold">Мини-группа (3–5 чел)</div>
+                                    <div class="text-[11px] text-slateDark/60 font-normal">Здоровый азарт, видим ошибки других, веселее</div>
+                                </div>
+                            </button>
+                            <button onclick="answerQuiz(2, 'pair')" class="p-4 rounded-2xl bg-white border border-cream-200 text-left hover:border-peach hover:shadow-md transition-all text-xs font-bold text-slateDark flex flex-col justify-between gap-2">
+                                <span class="text-2xl">👯</span>
+                                <div>
+                                    <div class="font-extrabold">В паре с другом</div>
+                                    <div class="text-[11px] text-slateDark/60 font-normal">Вдвоём не страшно задавать вопросы</div>
+                                </div>
+                            </button>
+                            <button onclick="answerQuiz(2, 'indiv')" class="p-4 rounded-2xl bg-white border border-cream-200 text-left hover:border-peach hover:shadow-md transition-all text-xs font-bold text-slateDark flex flex-col justify-between gap-2">
+                                <span class="text-2xl">🎯</span>
+                                <div>
+                                    <div class="font-extrabold">Один на один</div>
+                                    <div class="text-[11px] text-slateDark/60 font-normal">100% внимания только на мои слабые места</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 (hidden initially) -->
+                    <div id="quizStep3" class="space-y-4 hidden">
+                        <h3 class="font-display font-extrabold text-base text-slateDark">
+                            3. Что сделает урок для тебя по-настоящему классным?
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <button onclick="answerQuiz(3, 'cozy')" class="p-4 rounded-2xl bg-white border border-cream-200 text-left hover:border-peach hover:shadow-md transition-all text-xs font-bold text-slateDark flex flex-col gap-2">
+                                <span class="text-2xl">☕</span>
+                                <div class="font-extrabold">Уют и чай</div>
+                                <div class="text-[11px] text-slateDark/60 font-normal">Никакого крика, можно ошибаться и шутить</div>
+                            </button>
+                            <button onclick="answerQuiz(3, 'logic')" class="p-4 rounded-2xl bg-white border border-cream-200 text-left hover:border-peach hover:shadow-md transition-all text-xs font-bold text-slateDark flex flex-col gap-2">
+                                <span class="text-2xl">🧠</span>
+                                <div class="font-extrabold">Инсайт «Эврика!»</div>
+                                <div class="text-[11px] text-slateDark/60 font-normal">Когда сам понял, откуда взялась эта формула</div>
+                            </button>
+                            <button onclick="answerQuiz(3, 'cat')" class="p-4 rounded-2xl bg-white border border-cream-200 text-left hover:border-peach hover:shadow-md transition-all text-xs font-bold text-slateDark flex flex-col gap-2">
+                                <span class="text-2xl">🐾</span>
+                                <div class="font-extrabold">Кот Саян на связи</div>
+                                <div class="text-[11px] text-slateDark/60 font-normal">Пушистый ассистент снимает любой стресс</div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Result -->
+                    <div id="quizResult" class="p-6 rounded-3xl bg-peach-light/60 border border-peach/30 space-y-4 hidden text-center">
+                        <div class="w-16 h-16 rounded-2xl bg-peach text-white mx-auto flex items-center justify-center text-3xl shadow-lg">
+                            <span id="resultIcon">🏆</span>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="text-xs uppercase font-black text-peach tracking-wider">Результат экспресс-диагностики</div>
+                            <h3 id="resultArchetypeTitle" class="font-display text-2xl font-black text-slateDark">
+                                Геометрический Детектив 🔍
+                            </h3>
+                            <p id="resultArchetypeDesc" class="text-xs text-slateDark/80 max-w-lg mx-auto leading-relaxed">
+                                Тебе не нужна сухая зубрежка. У тебя пытливый ум, которому нужны наглядные доказательства и спокойная атмосфера. С Марией и Саяном геометрия превратится в увлекательный квест, а ОГЭ сдастся на максимальный балл!
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-center gap-3 pt-2">
+                            <button onclick="applyQuizRecommendation()" class="px-6 py-3.5 rounded-2xl bg-peach hover:bg-peach-hover text-white font-black text-xs uppercase tracking-wider shadow-lg shadow-peach/30 transition-all flex items-center gap-2">
+                                <span>Занять место по совету теста</span>
+                                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                            <button onclick="resetQuiz()" class="px-4 py-3.5 rounded-2xl bg-white border border-cream-300 text-slateDark font-bold text-xs hover:bg-cream-100 transition-colors">
+                                Пройти заново
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- FORMATS & PRICING (Interactive Selector that links to schedule) -->
+            <section id="formats" class="space-y-4">
+                <div class="text-center max-w-lg mx-auto space-y-1">
+                    <span class="text-xs font-extrabold text-peach uppercase tracking-wider">Форматы занятий</span>
+                    <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slateDark">Выберите подходящий формат</h2>
+                    <p class="text-xs text-slateDark/70">Занятия проходят онлайн (Zoom / Telegram / МАКС / доска Miro)</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="formatsCards">
+                    <!-- Format cards generated by JS -->
+                </div>
+            </section>
+
+            <!-- TOP-TIER INTERACTIVE SCHEDULE & BOOKING (AS IN ELENA BEAUTY) -->
+            <section id="booking" class="glass-panel rounded-3xl p-6 sm:p-10 blob-shadow space-y-6">
+                
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-cream-200">
+                    <div>
+                        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-peach-light text-peach text-xs font-bold mb-1">
+                            <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                            <span>Интерактивное расписание • Онлайн-запись</span>
+                        </div>
+                        <h2 class="font-display text-2xl sm:text-3xl font-extrabold text-slateDark">
+                            Выберите дату и удобное свободное окно
+                        </h2>
+                    </div>
+
+                    <!-- Legend -->
+                    <div class="flex items-center gap-3 text-xs">
+                        <span class="flex items-center gap-1.5 font-bold text-slateDark">
+                            <span class="w-3 h-3 rounded-full bg-peach"></span>
+                            Свободно
+                        </span>
+                        <span class="flex items-center gap-1.5 font-semibold text-slateDark/50">
+                            <span class="w-3 h-3 rounded-full bg-slateDark/20"></span>
+                            Занято
+                        </span>
+                    </div>
+                </div>
+
+                <!-- 1. DYNAMIC HORIZONTAL DAYS SCROLL (14 Days) -->
+                <div class="min-w-0 max-w-full overflow-hidden">
+                    <div class="flex items-center justify-between mb-2">
+                        <label class="text-xs font-extrabold uppercase tracking-wider text-slateDark/70">1. Выберите дату (ближайшие 14 дней)</label>
+                        <span class="text-[11px] text-peach font-bold" id="currentSelectedMonth">Ноябрь 2026</span>
+                    </div>
+                    <div id="daysScroll" class="flex gap-2 overflow-x-auto pb-2 scroll-smooth max-w-full">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- 2. SMART SLOTS GRID WITH REAL OCCUPANCY -->
+                <div class="space-y-2">
+                    <div class="flex items-center justify-between">
+                        <label class="text-xs font-extrabold uppercase tracking-wider text-slateDark/70">2. Свободные слоты на выбранный день</label>
+                        <span class="text-[11px] text-slateDark/60">Длительность урока: 60 минут</span>
+                    </div>
+                    
+                    <div id="slotsGrid" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-2.5">
+                        <!-- Populated by JS -->
+                    </div>
+
+                    <!-- Dynamic Slot Confirmation Notice -->
+                    <div id="slotNotice" class="text-xs text-emerald-800 bg-emerald-50 border border-emerald-200 p-3 rounded-2xl flex items-center gap-2.5 mt-3 shadow-sm">
+                        <i data-lucide="clock" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i>
+                        <span id="slotNoticeText">Выбрано: 16:00 (урок до 17:00)</span>
+                    </div>
+                </div>
+
+                <!-- 3. CLIENT INFO & MESSENGER CHOICE -->
+                <form id="bookingForm" onsubmit="submitClientBooking(event)" class="space-y-4 pt-2 border-t border-cream-200">
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div class="space-y-1">
+                            <label class="block text-xs font-bold text-slateDark">Класс ученика *</label>
+                            <select id="custGrade" class="w-full px-3 py-2.5 rounded-xl bg-white border border-cream-300 text-xs font-bold text-slateDark focus:outline-none focus:border-peach">
+                                <option value="5">5 класс</option>
+                                <option value="6">6 класс</option>
+                                <option value="7">7 класс (начало геометрии)</option>
+                                <option value="8">8 класс</option>
+                                <option value="9" selected>9 класс (Подготовка к ОГЭ)</option>
+                            </select>
+                        </div>
+                        <div class="space-y-1">
+                            <label class="block text-xs font-bold text-slateDark">Имя ученика / родителя *</label>
+                            <input type="text" id="custName" required placeholder="Например: Артём" class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-cream-300 text-xs text-slateDark focus:outline-none focus:border-peach">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="block text-xs font-bold text-slateDark">Телефон *</label>
+                            <input type="tel" id="custPhone" required placeholder="+7 (999) 000-00-00" class="w-full px-3.5 py-2.5 rounded-xl bg-white border border-cream-300 text-xs text-slateDark focus:outline-none focus:border-peach">
+                        </div>
+                    </div>
+
+                    <!-- Preferred Messenger -->
+                    <div class="space-y-1.5">
+                        <label class="block text-xs font-bold text-slateDark">Где согласовать ссылку на видеоурок и созвон?</label>
+                        <div class="grid grid-cols-3 gap-2.5">
+                            <label class="flex items-center justify-center gap-2 p-2.5 rounded-xl bg-sky-50 border border-sky-200 cursor-pointer hover:border-[#2AABEE] transition-colors text-xs font-bold text-[#2AABEE]">
+                                <input type="radio" name="custMessenger" value="Telegram" checked class="accent-[#2AABEE]">
+                                <span>Telegram</span>
+                            </label>
+                            <label class="flex items-center justify-center gap-2 p-2.5 rounded-xl bg-blue-50 border border-blue-200 cursor-pointer hover:border-[#0077FF] transition-colors text-xs font-bold text-[#0077FF]">
+                                <input type="radio" name="custMessenger" value="МАКС" class="accent-[#0077FF]">
+                                <span>МАКС (MAX)</span>
+                            </label>
+                            <label class="flex items-center justify-center gap-2 p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 cursor-pointer hover:border-emerald-500 transition-colors text-xs font-bold text-emerald-800">
+                                <input type="radio" name="custMessenger" value="Звонок" class="accent-emerald-600">
+                                <span>Звонок</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-2xl bg-peach hover:bg-peach-hover text-white font-extrabold text-sm uppercase tracking-wider shadow-lg shadow-peach/30 transition-all flex items-center justify-center gap-2">
+                        <span>Зафиксировать запись на вводный урок</span>
+                        <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                    </button>
+
+                </form>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="pt-8 pb-12 border-t border-cream-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slateDark/70">
+                <div class="flex items-center gap-3">
+                    <span class="font-display font-extrabold text-sm text-slateDark">Мария Дружинина</span>
+                    <span>•</span>
+                    <span>Архитектор математического мышления • 5–9 классы</span>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="https://max.ru/u/+79195784289" target="_blank" class="hover:text-[#0077FF] transition-colors font-bold flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-[#0077FF]"></span>МАКС (+7 919 578 42 89)</a>
+                    <a href="https://t.me/mm_kami" target="_blank" class="hover:text-[#2AABEE] transition-colors font-bold flex items-center gap-1.5"><i data-lucide="send" class="w-3.5 h-3.5"></i>Telegram (@mm_kami)</a>
+                    <a href="tel:+79195784289" class="hover:text-peach transition-colors font-bold flex items-center gap-1.5"><span>📞</span>+7 919 578 42 89</a>
+                    <button onclick="requestTeacherAccess()" class="text-slateDark/40 hover:text-slateDark flex items-center gap-1 font-semibold transition-colors">
+                        <i data-lucide="lock" class="w-3.5 h-3.5"></i>
+                        <span>Вход для преподавателя</span>
+                    </button>
+                </div>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- TEACHER NOTEBOOK VIEW (ПОЛНОЦЕННАЯ ТЕТРАДКА МАРИИ) -->
+    <div id="teacherView" class="hidden max-w-4xl mx-auto px-4 py-6 space-y-6">
+        
+        <!-- Top Teacher Bar -->
+        <div class="flex items-center justify-between bg-white rounded-3xl p-5 shadow-sm border border-cream-200">
+            <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-2xl bg-peach-light text-peach flex items-center justify-center text-2xl">
+                    📓
+                </div>
+                <div>
+                    <h2 class="font-display font-black text-xl text-slateDark">Тетрадка расписания — Мария</h2>
+                    <p class="text-xs text-slateDark/60">Почасовой график, блокировка часов и учёт учеников</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <button onclick="fillDemoStudents()" class="px-3.5 py-2 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition-all" title="Заполнить расписание 4 тестовыми учениками">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                    <span>🎲 Демо-ученики</span>
+                </button>
+                <button onclick="openManualAddModal()" class="px-4 py-2 rounded-xl bg-peach hover:bg-peach-hover text-white font-bold text-xs flex items-center gap-1.5 shadow-sm transition-all">
+                    <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+                    <span>+ Записать ученика</span>
+                </button>
+                <button onclick="toggleTeacherModeView()" class="px-3 py-2 rounded-xl border border-cream-300 text-slateDark font-bold text-xs hover:bg-cream-100 transition-colors">
+                    К сайту
+                </button>
+            </div>
+        </div>
+
+        <!-- Master Day Metrics -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="p-4 rounded-2xl bg-white border border-cream-200 text-center shadow-sm">
+                <div class="text-xs text-slateDark/60 font-semibold">Уроков на выбранный день</div>
+                <div id="teacherDayLessonsCount" class="font-display text-2xl font-black text-slateDark mt-1">0</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-white border border-cream-200 text-center shadow-sm">
+                <div class="text-xs text-slateDark/60 font-semibold">Ожидаемая выручка за день</div>
+                <div id="teacherDayIncome" class="font-display text-2xl font-black text-emerald-600 mt-1">0 ₽</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-white border border-cream-200 text-center shadow-sm">
+                <div class="text-xs text-slateDark/60 font-semibold">Свободных окон для записи</div>
+                <div id="teacherDayFreeSlots" class="font-display text-2xl font-black text-peach mt-1">0</div>
+            </div>
+        </div>
+
+        <!-- Teacher Day Selector (Horizontal Bar) -->
+        <div class="bg-white rounded-3xl p-5 shadow-sm border border-cream-200 space-y-3">
+            <label class="block text-xs font-extrabold uppercase tracking-wider text-slateDark/70">Выберите дату в графике</label>
+            <div id="teacherDaysBar" class="flex gap-2 overflow-x-auto pb-1">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+
+        <!-- HOURLY TIMELINE (ПОЧАСОВОЙ ГРАФИК 10:00 — 21:00) -->
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-cream-200 space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-cream-200">
+                <div>
+                    <h3 class="font-display font-extrabold text-base text-slateDark">Почасовой график на день</h3>
+                    <p class="text-xs text-slateDark/60" id="teacherTimelineDateLabel">16 ноября 2026</p>
+                </div>
+                <div class="flex items-center gap-2 text-xs">
+                    <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200 font-bold">Свободно</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-peach-light text-peach border border-peach/30 font-bold">Урок</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-600 border border-slate-200 font-bold">Заблокировано</span>
+                </div>
+            </div>
+
+            <!-- Timeline Rows -->
+            <div id="teacherTimeline" class="space-y-2.5">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+
+        <!-- ALL STUDENTS DATABASE & RECENT BOOKINGS -->
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-cream-200 space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-cream-200">
+                <h3 class="font-display font-extrabold text-base text-slateDark">Все ученики и заявки (<span id="teacherTotalCount">0</span>)</h3>
+                <button onclick="exportTeacherCalendarAll()" class="px-3 py-1.5 rounded-xl bg-cream-200 hover:bg-cream-300 text-slateDark font-bold text-xs flex items-center gap-1.5 transition-colors">
+                    <i data-lucide="calendar" class="w-3.5 h-3.5 text-peach"></i>
+                    <span>В Яндекс.Календарь</span>
+                </button>
+            </div>
+
+            <div id="teacherAllBookingsList" class="space-y-2.5">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PIN MODAL FOR TEACHER ACCESS -->
+    <div id="pinModal" class="fixed inset-0 z-50 bg-slateDark/70 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-xs rounded-3xl p-6 shadow-2xl space-y-4 text-center border border-cream-200">
+            <div class="w-14 h-14 rounded-2xl bg-peach-light text-peach flex items-center justify-center mx-auto text-2xl shadow-sm">
+                🔒
+            </div>
+            <div>
+                <h3 class="font-display font-extrabold text-lg text-slateDark">Кабинет Марии</h3>
+                <p class="text-xs text-slateDark/60 mt-0.5">Введите PIN-код для входа (по умолчанию <strong>1234</strong>)</p>
+            </div>
+            <div>
+                <input type="password" id="pinInput" maxlength="4" placeholder="••••" class="w-36 text-center tracking-widest text-2xl font-bold py-2 rounded-xl border border-cream-300 focus:outline-none focus:border-peach">
+            </div>
+            <div class="flex gap-2">
+                <button onclick="closePinModal()" class="flex-1 py-2.5 rounded-xl bg-cream-100 text-xs font-bold text-slateDark">Отмена</button>
+                <button onclick="verifyPin()" class="flex-1 py-2.5 rounded-xl bg-peach text-xs font-bold text-white hover:bg-peach-hover">Войти</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MANUAL ADD STUDENT MODAL -->
+    <div id="manualAddModal" class="fixed inset-0 z-50 bg-slateDark/70 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-sm rounded-3xl p-6 shadow-2xl space-y-4 border border-cream-200">
+            <div class="flex items-center justify-between pb-2 border-b border-cream-200">
+                <h3 class="font-display font-extrabold text-base text-slateDark">+ Записать ученика в график</h3>
+                <button onclick="closeManualAddModal()" class="text-slateDark/40 hover:text-slateDark text-xl font-bold">&times;</button>
+            </div>
+
+            <div class="space-y-3 text-xs">
+                <div>
+                    <label class="font-bold text-slateDark block mb-1">Имя ученика</label>
+                    <input type="text" id="manualCustName" placeholder="Например: Даниил (8 класс)" class="w-full px-3 py-2 border rounded-xl">
+                </div>
+                <div>
+                    <label class="font-bold text-slateDark block mb-1">Телефон</label>
+                    <input type="tel" id="manualCustPhone" placeholder="+7..." class="w-full px-3 py-2 border rounded-xl">
+                </div>
+                <div>
+                    <label class="font-bold text-slateDark block mb-1">Формат занятия</label>
+                    <select id="manualCustFormat" class="w-full px-3 py-2 border rounded-xl font-bold">
+                        <option value="Мини-группа (900 ₽)">Мини-группа (900 ₽)</option>
+                        <option value="В паре (1 100 ₽)">В паре (1 100 ₽)</option>
+                        <option value="Индивидуально (1 600 ₽)" selected>Индивидуально (1 600 ₽)</option>
+                    </select>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <div>
+                        <label class="font-bold text-slateDark block mb-1">Дата</label>
+                        <select id="manualCustDateSelect" class="w-full px-3 py-2 border rounded-xl font-bold"></select>
+                    </div>
+                    <div>
+                        <label class="font-bold text-slateDark block mb-1">Время</label>
+                        <select id="manualCustTimeSelect" class="w-full px-3 py-2 border rounded-xl font-bold"></select>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="saveManualStudentEntry()" class="w-full py-3 rounded-xl bg-peach hover:bg-peach-hover text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-md shadow-peach/25">
+                Зафиксировать в расписании
+            </button>
+        </div>
+    </div>
+
+    <!-- CLIENT CONFIRMATION MODAL -->
+    <div id="confirmModal" class="fixed inset-0 z-50 bg-slateDark/70 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="max-w-md w-full rounded-3xl bg-white p-6 sm:p-8 shadow-2xl border border-cream-200 space-y-5 text-center relative">
+            <div class="w-16 h-16 rounded-2xl bg-peach-light text-peach mx-auto flex items-center justify-center text-3xl shadow-sm">
+                🐾
+            </div>
+
+            <div class="space-y-1">
+                <h3 class="font-display text-2xl font-extrabold text-slateDark">Заявка принята!</h3>
+                <p class="text-xs text-slateDark/70 leading-relaxed">
+                    Кот Саян передал данные Марии. Мы свяжемся с вами в течение 2 часов для подтверждения созвона.
+                </p>
+            </div>
+
+            <div id="modalSummaryBox" class="p-4 rounded-2xl bg-cream-100 border border-cream-200 text-left space-y-1 text-xs"></div>
+
+            <div class="space-y-2 pt-1">
+                <a id="maxDirectBtn" href="https://max.ru/u/+79195784289" target="_blank" class="w-full py-2.5 rounded-xl bg-[#0077FF] hover:bg-[#0062D6] text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                    <span>Написать Марии в МАКС (+7 919 578 42 89)</span>
+                </a>
+
+                <a id="tgDirectBtn" href="https://t.me/mm_kami" target="_blank" class="w-full py-2.5 rounded-xl bg-[#2AABEE] hover:bg-[#2299D6] text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors shadow-sm">
+                    <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                    <span>Написать в Telegram (@mm_kami)</span>
+                </a>
+
+                <button onclick="addCurrentToYandex()" class="w-full py-2.5 rounded-xl bg-cream-200 hover:bg-cream-300 text-slateDark font-bold text-xs flex items-center justify-center gap-2 transition-colors">
+                    <i data-lucide="calendar-plus" class="w-4 h-4 text-peach"></i>
+                    <span>Добавить в Яндекс.Календарь</span>
+                </button>
+
+                <button onclick="downloadCurrentICS()" class="w-full py-2 rounded-xl border border-cream-200 hover:bg-cream-100 text-slateDark/80 font-bold text-xs flex items-center justify-center gap-2 transition-colors">
+                    <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                    <span>Скачать .ICS файл</span>
+                </button>
+            </div>
+
+            <button onclick="closeConfirmModal()" class="text-xs text-slateDark/50 hover:text-slateDark font-semibold">
+                Закрыть окно
+            </button>
+        </div>
+    </div>
+
+    <!-- PHOTO STUDIO & AVATAR SWAPPER MODAL -->
+    <div id="photoModal" class="fixed inset-0 z-50 bg-slateDark/75 backdrop-blur-md hidden items-center justify-center p-4">
+        <div class="bg-white w-full max-w-lg rounded-3xl p-6 sm:p-8 shadow-2xl space-y-5 border border-cream-200 relative max-h-[90vh] overflow-y-auto">
+            
+            <div class="flex items-center justify-between pb-3 border-b border-cream-200">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-2xl bg-peach-light text-peach flex items-center justify-center text-xl shadow-sm">
+                        📸
+                    </div>
+                    <div>
+                        <h3 class="font-display font-extrabold text-lg text-slateDark">Гардеробная фотографий</h3>
+                        <p class="text-xs text-slateDark/60">Примерьте готовые образы или загрузите своё фото</p>
+                    </div>
+                </div>
+                <button onclick="closePhotoModal()" class="text-slateDark/40 hover:text-slateDark text-2xl font-bold leading-none p-1">&times;</button>
+            </div>
+
+            <!-- Preset Images Grid -->
+            <div>
+                <label class="block text-xs font-extrabold uppercase tracking-wider text-slateDark/70 mb-2.5">
+                    1. Выберите готовый фотосет
+                </label>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    <!-- Preset 1 -->
+                    <div onclick="selectPresetPhoto('assets/maria_fountain.jpg', 'Мария Дружинина', 'Твой проводник в мир геометрии 📐')" class="group p-2 rounded-2xl border-2 border-cream-200 hover:border-peach cursor-pointer transition-all bg-cream-50 text-center">
+                        <img src="assets/maria_fountain.jpg" alt="На фонтане" class="w-full h-24 object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform">
+                        <div class="text-[11px] font-bold text-slateDark mt-1.5">⛲ На фонтане</div>
+                        <div class="text-[9px] text-peach font-semibold">Летний вайб</div>
+                    </div>
+
+                    <!-- Preset 2 -->
+                    <div onclick="selectPresetPhoto('assets/maria_profile.jpg', 'Мария Дружинина', 'Архитектор математического мышления • 5–9 классы 🎓')" class="group p-2 rounded-2xl border-2 border-cream-200 hover:border-peach cursor-pointer transition-all bg-cream-50 text-center">
+                        <img src="assets/maria_profile.jpg" alt="Рыжие волосы" class="w-full h-24 object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform">
+                        <div class="text-[11px] font-bold text-slateDark mt-1.5">👩‍🦰 Профиль</div>
+                        <div class="text-[9px] text-peach font-semibold">Теплая эстетика</div>
+                    </div>
+
+                    <!-- Preset 3 -->
+                    <div onclick="selectPresetPhoto('assets/cat_sayan.jpg', 'Кот Саян', 'Главный репетитор по кошачьей геометрии 🐾')" class="group p-2 rounded-2xl border-2 border-cream-200 hover:border-peach cursor-pointer transition-all bg-cream-50 text-center">
+                        <img src="assets/cat_sayan.jpg" alt="Кот Саян" class="w-full h-24 object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform">
+                        <div class="text-[11px] font-bold text-slateDark mt-1.5">🐾 Кот Саян</div>
+                        <div class="text-[9px] text-peach font-semibold">На посту</div>
+                    </div>
+
+                    <!-- Preset 4 -->
+                    <div onclick="selectPresetPhoto('assets/cat_sleep.jpg', 'Спящий Саян', 'Кот спит — домашку проверил 💤')" class="group p-2 rounded-2xl border-2 border-cream-200 hover:border-peach cursor-pointer transition-all bg-cream-50 text-center">
+                        <img src="assets/cat_sleep.jpg" alt="Спящий Саян" class="w-full h-24 object-cover rounded-xl shadow-sm group-hover:scale-105 transition-transform">
+                        <div class="text-[11px] font-bold text-slateDark mt-1.5">😴 Спит на коврике</div>
+                        <div class="text-[9px] text-peach font-semibold">Антистресс</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Photo Upload Drop Area -->
+            <div class="space-y-2 pt-1 border-t border-cream-200">
+                <label class="block text-xs font-extrabold uppercase tracking-wider text-slateDark/70">
+                    2. Или загрузите любое своё фото
+                </label>
+                <input type="file" id="mariaCustomFileInput" accept="image/*" class="hidden" onchange="handleCustomPhotoUpload(event)">
+                <div onclick="document.getElementById('mariaCustomFileInput').click()" class="border-2 border-dashed border-peach/50 hover:border-peach rounded-2xl p-5 text-center cursor-pointer bg-peach-light/30 hover:bg-peach-light/60 transition-all space-y-1">
+                    <div class="text-3xl">📁</div>
+                    <div class="text-xs font-extrabold text-slateDark">Нажмите, чтобы выбрать файл с телефона или компьютера</div>
+                    <div class="text-[10px] text-slateDark/60">JPG, PNG, WebP • Фото сразу отобразится на сайте и сохранится</div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-2">
+                <button onclick="resetToOriginalPhoto()" class="px-3.5 py-2 rounded-xl border border-cream-300 text-xs font-bold text-slateDark hover:bg-cream-100 transition-colors">
+                    ↺ Сбросить к оригиналу
+                </button>
+                <button onclick="closePhotoModal()" class="px-5 py-2 rounded-xl bg-peach text-white font-extrabold text-xs hover:bg-peach-hover shadow-md transition-all">
+                    Готово
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FLOATING THEME SWITCHER DOCK (MOBILE & DESKTOP) -->
+    <div id="themeSwitcherDock" class="fixed bottom-3 right-3 sm:bottom-4 sm:right-4 z-40 bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl border border-cream-300 p-1 sm:p-1.5 flex items-center transition-all duration-300">
+        <!-- Mobile Collapsed Pill (default on mobile: takes minimal 75px footprint, never covers cards) -->
+        <button onclick="toggleMobileThemeDock(true)" id="mobileThemeTrigger" class="sm:hidden flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-bold text-peach" title="Сменить стиль">
+            <i data-lucide="palette" class="w-3.5 h-3.5"></i>
+            <span id="activeThemeEmoji">🐱</span>
+            <span class="text-[10px] uppercase font-black tracking-wider">Стиль</span>
+        </button>
+
+        <!-- Expanded Theme Controls (always visible on sm+, expandable on mobile) -->
+        <div id="themeControlsContent" class="hidden sm:flex items-center gap-1">
+            <span class="text-[11px] font-black text-peach pl-2 pr-1 hidden md:inline">Стиль:</span>
+            <button onclick="setTheme('cozy-cat')" class="theme-btn p-2 rounded-xl text-xs font-bold transition-all active" data-theme-btn="cozy-cat" title="Уютный Кот Саян">🐱</button>
+            <button onclick="setTheme('sakura')" class="theme-btn p-2 rounded-xl text-xs font-bold transition-all" data-theme-btn="sakura" title="Сакура & Аниме">🌸</button>
+            <button onclick="setTheme('artek')" class="theme-btn p-2 rounded-xl text-xs font-bold transition-all" data-theme-btn="artek" title="Артек Лазурный">🏕</button>
+            <button onclick="setTheme('cyber')" class="theme-btn p-2 rounded-xl text-xs font-bold transition-all" data-theme-btn="cyber" title="Кибер-Кот Неон">🌌</button>
+            <!-- Close button for mobile -->
+            <button onclick="toggleMobileThemeDock(false)" class="sm:hidden p-1 text-slate-400 hover:text-slate-800 rounded-lg transition-colors ml-0.5" title="Свернуть">
+                <i data-lucide="x" class="w-3.5 h-3.5"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- SCRIPTING ENGINE -->
+    <script>
+        // ================= MULTI-THEME ENGINE =================
+        let currentTheme = localStorage.getItem('maria_theme') || 'cozy-cat';
+
+        function toggleMobileThemeDock(show) {
+            const trigger = document.getElementById('mobileThemeTrigger');
+            const controls = document.getElementById('themeControlsContent');
+            if (!trigger || !controls) return;
+            if (show) {
+                trigger.classList.add('hidden');
+                controls.classList.remove('hidden');
+                controls.classList.add('flex');
+            } else {
+                controls.classList.add('hidden');
+                controls.classList.remove('flex');
+                trigger.classList.remove('hidden');
+            }
+        }
+
+        function initTheme() {
+            setTheme(currentTheme, false);
+        }
+
+        function setTheme(themeName, playSound = true) {
+            currentTheme = themeName;
+            document.documentElement.setAttribute('data-theme', themeName);
+            localStorage.setItem('maria_theme', themeName);
+
+            const themeMeta = {
+                'cozy-cat': { emoji: '🐱', label: 'Саян' },
+                'sakura': { emoji: '🌸', label: 'Сакура' },
+                'artek': { emoji: '🏕', label: 'Артек' },
+                'cyber': { emoji: '🌌', label: 'Кибер' }
+            };
+            const meta = themeMeta[themeName] || themeMeta['cozy-cat'];
+
+            // Update bottom dock active emoji
+            const emojiEl = document.getElementById('activeThemeEmoji');
+            if (emojiEl) emojiEl.innerText = meta.emoji;
+
+            // Update Apple Header Popover badge & label
+            const headerActiveEmoji = document.getElementById('headerThemeActiveEmoji');
+            const headerActiveLabel = document.getElementById('headerThemeActiveLabel');
+            if (headerActiveEmoji) headerActiveEmoji.innerText = meta.emoji;
+            if (headerActiveLabel) headerActiveLabel.innerText = meta.label;
+
+            // Update popover checkmarks
+            document.querySelectorAll('#headerThemePopover [data-popover-theme]').forEach(btn => {
+                const isCurrent = btn.getAttribute('data-popover-theme') === themeName;
+                const check = btn.querySelector('.theme-check');
+                if (check) {
+                    if (isCurrent) check.classList.remove('hidden');
+                    else check.classList.add('hidden');
+                }
+            });
+
+            // Update all legacy theme buttons (bottom dock)
+            document.querySelectorAll('[data-theme-btn]').forEach(btn => {
+                if (btn.getAttribute('data-theme-btn') === themeName) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            if (playSound) playAudioPop(520, 0.08);
+        }
+
+        // --- Apple-Style Header Theme Popover Controller ---
+        function toggleHeaderThemeMenu(e) {
+            if (e) e.stopPropagation();
+            const pop = document.getElementById('headerThemePopover');
+            const chevron = document.getElementById('headerThemeChevron');
+            if (!pop) return;
+            const isHidden = pop.classList.contains('hidden');
+            if (isHidden) {
+                pop.classList.remove('hidden');
+                if (chevron) chevron.classList.add('rotate-180');
+            } else {
+                pop.classList.add('hidden');
+                if (chevron) chevron.classList.remove('rotate-180');
+            }
+        }
+
+        function selectHeaderTheme(themeName) {
+            setTheme(themeName);
+            const pop = document.getElementById('headerThemePopover');
+            const chevron = document.getElementById('headerThemeChevron');
+            if (pop) pop.classList.add('hidden');
+            if (chevron) chevron.classList.remove('rotate-180');
+        }
+
+        document.addEventListener('click', (e) => {
+            const wrap = document.getElementById('headerThemeDropdownWrap');
+            const pop = document.getElementById('headerThemePopover');
+            const chevron = document.getElementById('headerThemeChevron');
+            if (wrap && pop && !wrap.contains(e.target)) {
+                pop.classList.add('hidden');
+                if (chevron) chevron.classList.remove('rotate-180');
+            }
+        });
+
+        // ================= AUDIO SYNTHESIS ENGINE (WEB AUDIO API) =================
+        let soundEnabled = localStorage.getItem('maria_sound') !== 'false';
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        let audioCtx = null;
+
+        function getAudioContext() {
+            if (!audioCtx && AudioContextClass) {
+                audioCtx = new AudioContextClass();
+            }
+            if (audioCtx && audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            return audioCtx;
+        }
+
+        function toggleSound() {
+            soundEnabled = !soundEnabled;
+            localStorage.setItem('maria_sound', soundEnabled);
+            updateSoundUI();
+            if (soundEnabled) playAudioPop(650, 0.1);
+        }
+
+        function updateSoundUI() {
+            const icon = document.getElementById('soundIcon');
+            if (icon) {
+                icon.innerText = soundEnabled ? '🔊' : '🔇';
+            }
+        }
+
+        function playAudioPop(freq = 550, duration = 0.07) {
+            if (!soundEnabled) return;
+            try {
+                const ctx = getAudioContext();
+                if (!ctx) return;
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(freq, ctx.currentTime);
+                osc.frequency.exponentialRampToValueAtTime(freq * 1.35, ctx.currentTime + duration);
+                gain.gain.setValueAtTime(0.12, ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + duration);
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                osc.start();
+                osc.stop(ctx.currentTime + duration);
+            } catch (e) {}
+        }
+
+        function playAudioPurr() {
+            if (!soundEnabled) return;
+            try {
+                const ctx = getAudioContext();
+                if (!ctx) return;
+                const osc1 = ctx.createOscillator();
+                const osc2 = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc1.type = 'triangle';
+                osc2.type = 'sine';
+                osc1.frequency.setValueAtTime(160, ctx.currentTime);
+                osc2.frequency.setValueAtTime(320, ctx.currentTime);
+                osc1.frequency.exponentialRampToValueAtTime(360, ctx.currentTime + 0.18);
+                osc2.frequency.exponentialRampToValueAtTime(540, ctx.currentTime + 0.18);
+                gain.gain.setValueAtTime(0.12, ctx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.22);
+                osc1.connect(gain);
+                osc2.connect(gain);
+                gain.connect(ctx.destination);
+                osc1.start();
+                osc2.start();
+                osc1.stop(ctx.currentTime + 0.22);
+                osc2.stop(ctx.currentTime + 0.22);
+            } catch (e) {}
+        }
+
+        // ================= PET-THE-CAT SAYAN ENGINE =================
+        let catPetsCount = parseInt(localStorage.getItem('cat_sayan_pets') || '0', 10);
+        const CAT_QUOTES = [
+            'Муррр! Число Пи ≈ 3.14159, а почесать за ушком — бесценно! 🐾',
+            'Мяу! ОГЭ по математике сдадим на 5, главное не паниковать! ✨',
+            'Мр-р-р! В геометрии главное — видеть чертёж, а не зубрить теоремы! 📐',
+            'Мяу! Проверил твою домашку: всё сошлось, молодец! 🐱',
+            'Мррр! Архитектор мышления учит так, что даже коты понимают функции! 📈',
+            'Мяу! Доказательство готово: треугольники равны по двум сторонам и углу! 🏆',
+            'Уровень антистресса повышен на 100%! Теперь пора решить задачку №20 ☕'
+        ];
+        let catQuoteIdx = 0;
+        let catSpeechTimeout = null;
+
+        function petCatSayan(event) {
+            catPetsCount++;
+            localStorage.setItem('cat_sayan_pets', catPetsCount);
+            updateCatPetsBadge();
+
+            // Floating heart particles
+            spawnFloatingHeart(event.clientX, event.clientY);
+
+            // Audio purr
+            playAudioPurr();
+
+            // Purr animation
+            const card = document.getElementById('catSayanCard');
+            if (card) {
+                card.classList.remove('cat-purr-active');
+                void card.offsetWidth;
+                card.classList.add('cat-purr-active');
+            }
+
+            // Speech bubble
+            const bubble = document.getElementById('catSpeechBubble');
+            const textEl = document.getElementById('catSpeechText');
+            if (bubble && textEl) {
+                catQuoteIdx = (catQuoteIdx + 1) % CAT_QUOTES.length;
+                textEl.innerText = CAT_QUOTES[catQuoteIdx];
+                bubble.classList.add('visible');
+                clearTimeout(catSpeechTimeout);
+                catSpeechTimeout = setTimeout(() => {
+                    bubble.classList.remove('visible');
+                }, 4000);
+            }
+        }
+
+        function updateCatPetsBadge() {
+            const badge = document.getElementById('catPetsCountBadge');
+            if (badge) {
+                badge.innerText = `${catPetsCount} лапок`;
+            }
+        }
+
+        function spawnFloatingHeart(x, y) {
+            const emojis = ['💖', '🐾', '✨', '🐱', '⭐', '😻'];
+            const el = document.createElement('div');
+            el.className = 'floating-heart';
+            el.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+            el.style.left = `${(x || window.innerWidth / 2) - 14}px`;
+            el.style.top = `${(y || window.innerHeight / 2) - 20}px`;
+            el.style.setProperty('--tx', `${(Math.random() - 0.5) * 60}px`);
+            document.body.appendChild(el);
+            setTimeout(() => el.remove(), 1200);
+        }
+
+        // ================= PHOTO STUDIO & AVATAR SWAPPER =================
+        const DEFAULT_PORTRAIT = 'assets/maria_fountain.jpg';
+        const DEFAULT_NAME = 'Мария Дружинина';
+        const DEFAULT_SUB = 'Твой проводник в мир геометрии 📐';
+
+        function loadSavedPortrait() {
+            const saved = localStorage.getItem('maria_custom_portrait');
+            const savedName = localStorage.getItem('maria_portrait_name');
+            const savedSub = localStorage.getItem('maria_portrait_sub');
+            if (saved) {
+                const img = document.getElementById('mariaMainPortrait');
+                if (img) img.src = saved;
+            }
+            if (savedName) {
+                const nameEl = document.getElementById('portraitLabelName');
+                if (nameEl) nameEl.innerText = savedName;
+            }
+            if (savedSub) {
+                const subEl = document.getElementById('portraitLabelSub');
+                if (subEl) subEl.innerText = savedSub;
+            }
+        }
+
+        function openPhotoModal() {
+            document.getElementById('photoModal').classList.remove('hidden');
+            document.getElementById('photoModal').classList.add('flex');
+            playAudioPop(500, 0.08);
+            lucide.createIcons();
+        }
+
+        function closePhotoModal() {
+            document.getElementById('photoModal').classList.add('hidden');
+            document.getElementById('photoModal').classList.remove('flex');
+        }
+
+        function selectPresetPhoto(src, name, sub) {
+            const img = document.getElementById('mariaMainPortrait');
+            const nameEl = document.getElementById('portraitLabelName');
+            const subEl = document.getElementById('portraitLabelSub');
+            if (img) img.src = src;
+            if (nameEl) nameEl.innerText = name;
+            if (subEl) subEl.innerText = sub;
+
+            localStorage.setItem('maria_custom_portrait', src);
+            localStorage.setItem('maria_portrait_name', name);
+            localStorage.setItem('maria_portrait_sub', sub);
+
+            playAudioPop(700, 0.1);
+            closePhotoModal();
+        }
+
+        function handleCustomPhotoUpload(e) {
+            const file = e.target.files && e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(evt) {
+                const dataUrl = evt.target.result;
+                const img = document.getElementById('mariaMainPortrait');
+                const nameEl = document.getElementById('portraitLabelName');
+                const subEl = document.getElementById('portraitLabelSub');
+                if (img) img.src = dataUrl;
+                if (nameEl) nameEl.innerText = 'Мария Дружинина';
+                if (subEl) subEl.innerText = 'Индивидуальный образ ✨';
+
+                localStorage.setItem('maria_custom_portrait', dataUrl);
+                localStorage.setItem('maria_portrait_name', 'Мария Дружинина');
+                localStorage.setItem('maria_portrait_sub', 'Индивидуальный образ ✨');
+
+                playAudioPop(800, 0.15);
+                closePhotoModal();
+                alert('✨ Новое фото успешно загружено, отображено на сайте и сохранено в браузере!');
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function resetToOriginalPhoto() {
+            selectPresetPhoto(DEFAULT_PORTRAIT, DEFAULT_NAME, DEFAULT_SUB);
+        }
+
+        // ================= INTERACTIVE 30-SEC MATH QUIZ =================
+        const quizAnswers = {};
+
+        function answerQuiz(step, answerKey) {
+            quizAnswers[step] = answerKey;
+            playAudioPop(580 + step * 70, 0.08);
+
+            if (step === 1) {
+                document.getElementById('quizStep1').classList.add('hidden');
+                document.getElementById('quizStep2').classList.remove('hidden');
+                document.getElementById('quizStepPill2').className = 'w-7 h-2 rounded-full bg-peach transition-all';
+            } else if (step === 2) {
+                document.getElementById('quizStep2').classList.add('hidden');
+                document.getElementById('quizStep3').classList.remove('hidden');
+                document.getElementById('quizStepPill3').className = 'w-7 h-2 rounded-full bg-peach transition-all';
+            } else if (step === 3) {
+                document.getElementById('quizStep3').classList.add('hidden');
+                showQuizResult();
+            }
+        }
+
+        function showQuizResult() {
+            const resultBox = document.getElementById('quizResult');
+            const titleEl = document.getElementById('resultArchetypeTitle');
+            const descEl = document.getElementById('resultArchetypeDesc');
+            const iconEl = document.getElementById('resultIcon');
+
+            if (quizAnswers[1] === 'geo') {
+                iconEl.innerText = '📐';
+                titleEl.innerText = 'Геометрический Архитектор 🏛️';
+                descEl.innerText = 'У тебя пытливый пространственный ум, которому нужны наглядные чертежи и понятные ассоциации. Мария поможет распутать стереометрию и планиметрию так, что задачи №15–19 станут твоими любимыми!';
+            } else if (quizAnswers[1] === 'alg') {
+                iconEl.innerText = '🧮';
+                titleEl.innerText = 'Мастер Формул & Баланса ⚖️';
+                descEl.innerText = 'Твоя суперсила — логика, но спешка приводит к обидным ошибкам в дробях и знаках. Мы построим чёткую систему самопроверки, и ты заберёшь максимум баллов в 1-й части ОГЭ!';
+            } else if (quizAnswers[1] === 'top') {
+                iconEl.innerText = '🚀';
+                titleEl.innerText = 'Математический Стратег 🎯';
+                descEl.innerText = 'Ты целишься на уверенную пятёрку и высокий балл в топ-классы. Мы сделаем акцент на сложных прототипах №20–25 и нестандартных уравнениях!';
+            } else {
+                iconEl.innerText = '🐱';
+                titleEl.innerText = 'Друг Кота Саяна & Логик 🐾';
+                descEl.innerText = 'Главное для тебя — комфортная атмосфера без давления и спешки. В спокойном темпе с чаем и котом Саяном ты разберёшься во всех темах и сдашь ОГЭ без нервов!';
+            }
+
+            resultBox.classList.remove('hidden');
+            playAudioPurr();
+            lucide.createIcons();
+        }
+
+        function applyQuizRecommendation() {
+            let recProg = 'group';
+            if (quizAnswers[2] === 'indiv') recProg = 'indiv';
+            else if (quizAnswers[2] === 'pair') recProg = 'pair';
+
+            selectFormat(recProg);
+        }
+
+        function resetQuiz() {
+            document.getElementById('quizResult').classList.add('hidden');
+            document.getElementById('quizStep3').classList.add('hidden');
+            document.getElementById('quizStep2').classList.add('hidden');
+            document.getElementById('quizStep1').classList.remove('hidden');
+            document.getElementById('quizStepPill2').className = 'w-7 h-2 rounded-full bg-cream-300 transition-all';
+            document.getElementById('quizStepPill3').className = 'w-7 h-2 rounded-full bg-cream-300 transition-all';
+            playAudioPop(500, 0.08);
+        }
+
+        // ================= TEACHER DEMO STUDENTS GENERATOR =================
+        function fillDemoStudents() {
+            const today = getIso(0);
+            const tomorrow = getIso(1);
+            const in2days = getIso(2);
+
+            const demo = [
+                {
+                    id: Date.now() + 1,
+                    date: today,
+                    time: '14:00',
+                    startMin: 14 * 60,
+                    duration: 60,
+                    name: 'Даша Ковалева',
+                    grade: '9',
+                    phone: '+7 (912) 345-67-89',
+                    format: 'Мини-группа (900 ₽)',
+                    price: 900,
+                    messenger: 'Telegram',
+                    isBlocked: false,
+                    created: '11.11.2026, 10:15'
+                },
+                {
+                    id: Date.now() + 2,
+                    date: today,
+                    time: '17:00',
+                    startMin: 17 * 60,
+                    duration: 60,
+                    name: 'Илья Смирнов (ОГЭ геометрия)',
+                    grade: '9',
+                    phone: '+7 (903) 777-88-99',
+                    format: 'Индивидуально (1 600 ₽)',
+                    price: 1600,
+                    messenger: 'МАКС',
+                    isBlocked: false,
+                    created: '11.11.2026, 11:30'
+                },
+                {
+                    id: Date.now() + 3,
+                    date: tomorrow,
+                    time: '15:00',
+                    startMin: 15 * 60,
+                    duration: 60,
+                    name: 'София & Алина (подруги)',
+                    grade: '8',
+                    phone: '+7 (999) 222-33-44',
+                    format: 'Занятия в паре (1 100 ₽)',
+                    price: 1100,
+                    messenger: 'Telegram',
+                    isBlocked: false,
+                    created: '11.11.2026, 12:45'
+                },
+                {
+                    id: Date.now() + 4,
+                    date: in2days,
+                    time: '18:00',
+                    startMin: 18 * 60,
+                    duration: 60,
+                    name: 'Артем Поляков (диагностика)',
+                    grade: '7',
+                    phone: '+7 (918) 555-12-34',
+                    format: 'Индивидуально (1 600 ₽)',
+                    price: 1600,
+                    messenger: 'Звонок',
+                    isBlocked: false,
+                    created: '11.11.2026, 14:00'
+                }
+            ];
+
+            saveSchedule(demo);
+            renderTeacherTimeline();
+            renderTeacherAllBookings();
+            playAudioPop(750, 0.15);
+            alert('✨ Расписание заполнено 4 тестовыми учениками на разные дни! Можно протестировать отмену, звонки и почасовой график.');
+        }
+
+        // 1. CONFIG & DATA
+        const TUTOR_FORMATS = [
+            {
+                id: 'group',
+                title: 'Мини-группы (3–5 человек)',
+                desc: 'Идеальный баланс внимания и командной динамики. Дети поддерживают друг друга, видят чужие ошибки и быстрее растут.',
+                price: 900,
+                duration: 60,
+                icon: '👥',
+                badge: 'Топ выбор'
+            },
+            {
+                id: 'pair',
+                title: 'Занятия в паре (2 ученика)',
+                desc: 'Можно заниматься с одноклассником или другом. Здоровая соревновательность и максимум внимания преподавателя.',
+                price: 1100,
+                duration: 60,
+                icon: '👯',
+                badge: null
+            },
+            {
+                id: 'indiv',
+                title: 'Индивидуально',
+                desc: '100% фокус на целях конкретного ученика: экстренная подготовка к контрольным, сложная геометрия, ОГЭ с нуля.',
+                price: 1600,
+                duration: 60,
+                icon: '🎯',
+                badge: null
+            }
+        ];
+
+        let selectedFormatId = 'group';
+        let selectedDateIso = '';
+        let selectedTime = '16:00';
+        let isTeacherMode = false;
+        let teacherSelectedDateIso = '';
+        let lastCreatedBooking = null;
+
+        const WORK_START = 10 * 60; // 10:00
+        const WORK_END = 21 * 60;   // 21:00
+        const LESSON_DURATION = 60; // 60 mins
+        const STEP_MIN = 60;        // 1 hour intervals
+
+        // LocalStorage Helpers
+        function getSchedule() {
+            const data = localStorage.getItem('maria_schedule_v3');
+            if (data) return JSON.parse(data);
+
+            const today = getIso(0);
+            const tomorrow = getIso(1);
+            const in2days = getIso(2);
+
+            const initial = [
+                {
+                    id: 201,
+                    date: today,
+                    time: '14:00',
+                    startMin: 14 * 60,
+                    duration: 60,
+                    name: 'Даша К.',
+                    grade: 9,
+                    phone: '+7 (912) 333-22-11',
+                    format: 'Мини-группа (900 ₽)',
+                    price: 900,
+                    messenger: 'Telegram',
+                    isBlocked: false
+                },
+                {
+                    id: 202,
+                    date: tomorrow,
+                    time: '18:00',
+                    startMin: 18 * 60,
+                    duration: 60,
+                    name: 'Илья (ОГЭ)',
+                    grade: 9,
+                    phone: '+7 (902) 444-55-66',
+                    format: 'Индивидуально (1 600 ₽)',
+                    price: 1600,
+                    messenger: 'МАКС',
+                    isBlocked: false
+                },
+                {
+                    id: 203,
+                    date: in2days,
+                    time: '12:00',
+                    startMin: 12 * 60,
+                    duration: 60,
+                    name: 'Перерыв преподавателя',
+                    phone: '-',
+                    format: 'Заблокировано',
+                    price: 0,
+                    isBlocked: true
+                }
+            ];
+            localStorage.setItem('maria_schedule_v3', JSON.stringify(initial));
+            return initial;
+        }
+
+        function saveSchedule(items) {
+            localStorage.setItem('maria_schedule_v3', JSON.stringify(items));
+        }
+
+        function getIso(offset = 0) {
+            const d = new Date();
+            d.setDate(d.getDate() + offset);
+            return d.toISOString().split('T')[0];
+        }
+
+        function formatRuDate(isoStr) {
+            const months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+            const days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+            const parts = isoStr.split('-');
+            const d = new Date(parts[0], parts[1] - 1, parts[2]);
+            return `${days[d.getDay()]}, ${d.getDate()} ${months[d.getMonth()]}`;
+        }
+
+        function minToTime(mins) {
+            const h = Math.floor(mins / 60).toString().padStart(2, '0');
+            const m = (mins % 60).toString().padStart(2, '0');
+            return `${h}:${m}`;
+        }
+
+        // --- INIT ---
+        document.addEventListener('DOMContentLoaded', () => {
+            initTheme();
+            updateSoundUI();
+            updateCatPetsBadge();
+            loadSavedPortrait();
+
+            selectedDateIso = getIso(0);
+            teacherSelectedDateIso = getIso(0);
+
+            renderFormatCards();
+            renderDaysScroll();
+            recomputeSlots();
+            populateManualDateDropdowns();
+            lucide.createIcons();
+
+            if (window.location.hash === '#admin' || window.location.hash === '#master' || sessionStorage.getItem('maria_teacher_auth') === 'true') {
+                grantTeacherMode();
+            }
+        });
+
+        // 2. FORMATS
+        function renderFormatCards() {
+            const container = document.getElementById('formatsCards');
+            container.innerHTML = TUTOR_FORMATS.map(f => {
+                const isSelected = selectedFormatId === f.id;
+                return `
+                    <div onclick="selectFormat('${f.id}')" class="p-6 rounded-3xl bg-white border-2 cursor-pointer transition-all flex flex-col justify-between relative ${
+                        isSelected ? 'border-peach shadow-md ring-2 ring-peach/20' : 'border-cream-200 hover:border-peach shadow-sm'
+                    }">
+                        ${f.badge ? `<div class="absolute -top-3 right-6 px-3 py-0.5 rounded-full bg-peach text-white text-[10px] font-extrabold uppercase tracking-wider">${f.badge}</div>` : ''}
+                        <div class="space-y-2">
+                            <div class="text-3xl">${f.icon}</div>
+                            <h3 class="font-display font-extrabold text-lg text-slateDark">${f.title}</h3>
+                            <p class="text-xs text-slateDark/70 leading-relaxed">${f.desc}</p>
+                            <div class="pt-2">
+                                <span class="font-display text-2xl font-black text-slateDark">${f.price} ₽</span>
+                                <span class="text-xs text-slateDark/60 font-semibold"> / 60 мин</span>
+                            </div>
+                        </div>
+                        <div class="pt-4">
+                            <div class="w-full py-2.5 rounded-2xl text-xs font-bold text-center transition-colors ${
+                                isSelected ? 'bg-peach text-white shadow-sm' : 'bg-cream-100 text-slateDark hover:bg-cream-200'
+                            }">
+                                ${isSelected ? '✓ Выбрано' : 'Выбрать'}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function selectFormat(id) {
+            selectedFormatId = id;
+            playAudioPop(620, 0.08);
+            renderFormatCards();
+            recomputeSlots();
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 3. DAYS SCROLL (14 Days)
+        function renderDaysScroll() {
+            const container = document.getElementById('daysScroll');
+            container.innerHTML = '';
+            const daysOfWeek = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+            const months = ['янв', 'фев', 'мар', 'апр', 'мая', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'];
+
+            for (let i = 0; i < 14; i++) {
+                const date = new Date();
+                date.setDate(date.getDate() + i);
+                const iso = date.toISOString().split('T')[0];
+                const dayTitle = i === 0 ? 'Сегодня' : i === 1 ? 'Завтра' : daysOfWeek[date.getDay()];
+                const dayNum = `${date.getDate()} ${months[date.getMonth()]}`;
+
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                const active = selectedDateIso === iso;
+                btn.className = `flex-shrink-0 px-4 py-2.5 rounded-2xl border text-center transition-all ${
+                    active ? 'bg-peach text-white border-peach font-extrabold shadow-md' : 'bg-white text-slateDark border-cream-200 hover:border-peach'
+                }`;
+                btn.innerHTML = `
+                    <div class="text-[10px] uppercase font-bold tracking-wider opacity-85">${dayTitle}</div>
+                    <div class="text-xs font-black mt-0.5">${dayNum}</div>
+                `;
+                btn.onclick = () => {
+                    playAudioPop(540, 0.06);
+                    selectedDateIso = iso;
+                    renderDaysScroll();
+                    recomputeSlots();
+                };
+                container.appendChild(btn);
+            }
+        }
+
+        // 4. SMART SLOTS CALCULATION
+        function recomputeSlots() {
+            const grid = document.getElementById('slotsGrid');
+            grid.innerHTML = '';
+            const schedule = getSchedule();
+            const dayItems = schedule.filter(b => b.date === selectedDateIso);
+
+            let firstValid = null;
+
+            for (let min = WORK_START; min < WORK_END; min += STEP_MIN) {
+                const timeStr = minToTime(min);
+                const endStr = minToTime(min + LESSON_DURATION);
+                
+                const isConflict = dayItems.some(b => {
+                    return Math.max(min, b.startMin) < Math.min(min + LESSON_DURATION, b.startMin + b.duration);
+                });
+
+                const slotBtn = document.createElement('button');
+                slotBtn.type = 'button';
+
+                if (isConflict) {
+                    slotBtn.disabled = true;
+                    slotBtn.className = 'py-3 px-2 rounded-2xl border border-cream-200/80 bg-cream-100/60 text-slateDark/35 text-xs font-semibold cursor-not-allowed line-through text-center';
+                    slotBtn.innerHTML = `<div>${timeStr}</div><div class="text-[9px] uppercase tracking-wider text-rose-400 font-bold">Занято</div>`;
+                } else {
+                    if (!firstValid) firstValid = timeStr;
+                    const isSelected = selectedTime === timeStr;
+                    slotBtn.className = `py-3 px-2 rounded-2xl border text-center text-xs font-bold transition-all ${
+                        isSelected ? 'bg-peach text-white border-peach shadow-md ring-2 ring-peach/30' : 'bg-white text-slateDark border-cream-200 hover:border-peach shadow-sm'
+                    }`;
+                    slotBtn.innerHTML = `<div>${timeStr}</div><div class="text-[10px] font-normal opacity-75">до ${endStr}</div>`;
+                    slotBtn.onclick = () => selectSlot(timeStr, endStr);
+                }
+                grid.appendChild(slotBtn);
+            }
+
+            if (firstValid && (!selectedTime || grid.querySelector('.line-through.bg-peach'))) {
+                selectSlot(firstValid, minToTime(parseInt(firstValid.split(':')[0]) * 60 + LESSON_DURATION));
+            } else if (!firstValid) {
+                selectedTime = '';
+                document.getElementById('slotNotice').className = 'text-xs text-rose-800 bg-rose-50 border border-rose-200 p-3 rounded-2xl flex items-center gap-2 mt-3';
+                document.getElementById('slotNoticeText').innerText = 'На этот день все часы заняты или закрыты преподавателем. Выберите другой день!';
+            }
+        }
+
+        function selectSlot(timeStr, endStr) {
+            selectedTime = timeStr;
+            playAudioPop(650, 0.08);
+            document.querySelectorAll('#slotsGrid button').forEach(b => {
+                if (b.innerText.includes(timeStr) && !b.disabled) {
+                    b.className = 'py-3 px-2 rounded-2xl border text-center text-xs font-bold transition-all bg-peach text-white border-peach shadow-md ring-2 ring-peach/30';
+                } else if (!b.disabled) {
+                    b.className = 'py-3 px-2 rounded-2xl border text-center text-xs font-bold transition-all bg-white text-slateDark border-cream-200 hover:border-peach shadow-sm';
+                }
+            });
+            document.getElementById('slotNotice').className = 'text-xs text-emerald-800 bg-emerald-50 border border-emerald-200 p-3 rounded-2xl flex items-center gap-2.5 mt-3 shadow-sm';
+            document.getElementById('slotNoticeText').innerText = `Выбрано: ${formatRuDate(selectedDateIso)} в ${timeStr} (урок до ${endStr})`;
+            lucide.createIcons();
+        }
+
+        // 5. CLIENT SUBMIT
+        function submitClientBooking(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value.trim();
+            const phone = document.getElementById('custPhone').value.trim();
+            const grade = document.getElementById('custGrade').value;
+            const messenger = document.querySelector('input[name="custMessenger"]:checked').value;
+
+            if (!name || !phone) return alert('Пожалуйста, укажите имя и телефон');
+            if (!selectedTime) return alert('Пожалуйста, выберите свободное время');
+
+            const formatObj = TUTOR_FORMATS.find(f => f.id === selectedFormatId);
+            const startH = parseInt(selectedTime.split(':')[0]);
+            const startMin = startH * 60;
+
+            const schedule = getSchedule();
+            const newBooking = {
+                id: Date.now(),
+                date: selectedDateIso,
+                time: selectedTime,
+                startMin: startMin,
+                duration: LESSON_DURATION,
+                name: name,
+                grade: grade,
+                phone: phone,
+                format: formatObj.title,
+                price: formatObj.price,
+                messenger: messenger,
+                isBlocked: false,
+                created: new Date().toLocaleString('ru-RU')
+            };
+
+            schedule.push(newBooking);
+            saveSchedule(schedule);
+            lastCreatedBooking = newBooking;
+
+            // Update UI
+            recomputeSlots();
+
+            // Populate Modal
+            document.getElementById('modalSummaryBox').innerHTML = `
+                <div><span class="text-slateDark/60">Ученик:</span> <strong>${name}</strong> (${grade} класс)</div>
+                <div><span class="text-slateDark/60">Дата и время:</span> <strong>${formatRuDate(selectedDateIso)} в ${selectedTime}</strong></div>
+                <div><span class="text-slateDark/60">Формат:</span> ${formatObj.title} (${formatObj.price} ₽)</div>
+                <div><span class="text-slateDark/60">Связь для созвона:</span> <strong>${messenger}</strong> (${phone})</div>
+            `;
+
+            // Messengers URLs
+            const msg = encodeURIComponent(`Привет, Мария! Меня зовут ${name}. Записались на пробный урок:\n- Дата: ${selectedDateIso} в ${selectedTime}\n- Формат: ${formatObj.title}\n- Класс: ${grade}\n- Телефон: ${phone}\n- Мессенджер: ${messenger}`);
+            document.getElementById('tgDirectBtn').href = `https://t.me/mm_kami?text=${msg}`;
+            document.getElementById('maxDirectBtn').href = `https://max.ru/u/+79195784289`;
+
+            document.getElementById('confirmModal').classList.remove('hidden');
+            document.getElementById('confirmModal').classList.add('flex');
+            lucide.createIcons();
+        }
+
+        function closeConfirmModal() {
+            document.getElementById('confirmModal').classList.add('hidden');
+            document.getElementById('confirmModal').classList.remove('flex');
+        }
+
+        // Calendar sync
+        function addCurrentToYandex() {
+            const b = lastCreatedBooking;
+            if (!b) return;
+            const startStr = `${b.date.replace(/-/g, '')}T${b.time.replace(':', '')}00`;
+            const endHour = String(parseInt(b.time.split(':')[0]) + 1).padStart(2, '0');
+            const endStr = `${b.date.replace(/-/g, '')}T${endHour}0000`;
+            const title = `Урок математики — Мария Дружинина`;
+            const desc = `Формат: ${b.format}\nУченик: ${b.name}\nТелефон: ${b.phone}\nМессенджер: ${b.messenger}`;
+
+            window.open(`https://calendar.yandex.ru/custom-event?name=${encodeURIComponent(title)}&start_ts=${startStr}&end_ts=${endStr}&description=${encodeURIComponent(desc)}`, '_blank');
+        }
+
+        function downloadCurrentICS() {
+            const b = lastCreatedBooking;
+            if (!b) return;
+            const dateClean = b.date.replace(/-/g, '');
+            const startH = b.time.split(':')[0];
+            const endH = String(parseInt(startH) + 1).padStart(2, '0');
+
+            const ics = [
+                'BEGIN:VCALENDAR',
+                'VERSION:2.0',
+                'PRODID:-//Maria Druzhinina Math//RU',
+                'CALSCALE:GREGORIAN',
+                'BEGIN:VEVENT',
+                `SUMMARY:Урок математики — Мария Дружинина`,
+                `DESCRIPTION:Формат: ${b.format}\\nУченик: ${b.name} (${b.phone})\\nМессенджер: ${b.messenger}`,
+                `DTSTART:${dateClean}T${startH}0000`,
+                `DTEND:${dateClean}T${endH}0000`,
+                'STATUS:CONFIRMED',
+                'END:VEVENT',
+                'END:VCALENDAR'
+            ].join('\r\n');
+
+            const blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `urok_maria_${b.date}.ics`;
+            a.click();
+        }
+
+        // ================= TEACHER ADMIN NOTEBOOK ENGINE =================
+        function requestTeacherAccess() {
+            if (sessionStorage.getItem('maria_teacher_auth') === 'true') {
+                grantTeacherMode();
+            } else {
+                document.getElementById('pinInput').value = '';
+                document.getElementById('pinModal').classList.remove('hidden');
+                document.getElementById('pinModal').classList.add('flex');
+                document.getElementById('pinInput').focus();
+            }
+        }
+
+        function closePinModal() {
+            document.getElementById('pinModal').classList.add('hidden');
+            document.getElementById('pinModal').classList.remove('flex');
+        }
+
+        function verifyPin() {
+            const p = document.getElementById('pinInput').value.trim();
+            if (p === '1234') {
+                sessionStorage.setItem('maria_teacher_auth', 'true');
+                closePinModal();
+                grantTeacherMode();
+            } else {
+                alert('Неверный PIN-код (по умолчанию 1234)');
+            }
+        }
+
+        function grantTeacherMode() {
+            isTeacherMode = true;
+            document.getElementById('teacherStickyBar').classList.remove('hidden');
+            document.getElementById('clientView').classList.add('hidden');
+            document.getElementById('teacherView').classList.remove('hidden');
+            document.getElementById('toggleViewBtn').innerText = 'Вернуться на сайт';
+
+            renderTeacherDaysBar();
+            renderTeacherTimeline();
+            renderTeacherAllBookings();
+            lucide.createIcons();
+        }
+
+        function toggleTeacherModeView() {
+            const cView = document.getElementById('clientView');
+            const tView = document.getElementById('teacherView');
+            const btn = document.getElementById('toggleViewBtn');
+
+            if (tView.classList.contains('hidden')) {
+                tView.classList.remove('hidden');
+                cView.classList.add('hidden');
+                btn.innerText = 'Вернуться на сайт';
+                renderTeacherTimeline();
+            } else {
+                tView.classList.add('hidden');
+                cView.classList.remove('hidden');
+                btn.innerText = 'Тетрадка преподавателя';
+                recomputeSlots();
+            }
+            lucide.createIcons();
+        }
+
+        function logoutTeacher() {
+            isTeacherMode = false;
+            sessionStorage.removeItem('maria_teacher_auth');
+            window.location.hash = '';
+            document.getElementById('teacherStickyBar').classList.add('hidden');
+            document.getElementById('teacherView').classList.add('hidden');
+            document.getElementById('clientView').classList.remove('hidden');
+            recomputeSlots();
+            lucide.createIcons();
+        }
+
+        function renderTeacherDaysBar() {
+            const container = document.getElementById('teacherDaysBar');
+            container.innerHTML = '';
+            const daysOfWeek = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'];
+
+            for (let i = 0; i < 14; i++) {
+                const date = new Date();
+                date.setDate(date.getDate() + i);
+                const iso = date.toISOString().split('T')[0];
+                const active = teacherSelectedDateIso === iso;
+
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = `px-3.5 py-2 rounded-xl text-xs font-bold whitespace-nowrap border transition-all ${
+                    active ? 'bg-slateDark text-white border-slateDark shadow-sm' : 'bg-white text-slateDark border-cream-200 hover:border-peach'
+                }`;
+                btn.innerText = i === 0 ? 'Сегодня' : i === 1 ? 'Завтра' : `${daysOfWeek[date.getDay()]} ${date.getDate()}.${date.getMonth()+1}`;
+                btn.onclick = () => {
+                    teacherSelectedDateIso = iso;
+                    renderTeacherDaysBar();
+                    renderTeacherTimeline();
+                };
+                container.appendChild(btn);
+            }
+        }
+
+        function renderTeacherTimeline() {
+            const container = document.getElementById('teacherTimeline');
+            container.innerHTML = '';
+            document.getElementById('teacherTimelineDateLabel').innerText = formatRuDate(teacherSelectedDateIso);
+
+            const schedule = getSchedule();
+            const dayItems = schedule.filter(b => b.date === teacherSelectedDateIso);
+
+            let lessonsCount = 0;
+            let income = 0;
+            let freeCount = 0;
+
+            for (let min = WORK_START; min < WORK_END; min += STEP_MIN) {
+                const timeStr = minToTime(min);
+                const endStr = minToTime(min + LESSON_DURATION);
+                const booking = dayItems.find(b => min >= b.startMin && min < (b.startMin + b.duration));
+
+                const row = document.createElement('div');
+                row.className = 'p-3.5 rounded-2xl border transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-3';
+
+                if (booking) {
+                    if (booking.isBlocked) {
+                        row.className += ' bg-slate-50 border-slate-200';
+                        row.innerHTML = `
+                            <div class="flex items-center gap-3">
+                                <span class="font-display font-black text-sm text-slate-400 w-16">${timeStr}</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-200 text-slate-700 text-xs font-bold">⛔ Закрыто для записи</span>
+                                <span class="text-xs text-slate-400">Час заблокирован преподавателем</span>
+                            </div>
+                            <button onclick="unblockSlot(${booking.id})" class="px-3 py-1.5 rounded-xl bg-white border border-slate-300 text-xs font-bold text-slateDark hover:bg-slate-100 self-start sm:self-auto">
+                                Разблокировать
+                            </button>
+                        `;
+                    } else {
+                        lessonsCount++;
+                        income += (booking.price || 0);
+                        row.className += ' bg-peach-light/50 border-peach/40 shadow-sm';
+                        row.innerHTML = `
+                            <div class="flex items-start sm:items-center gap-3">
+                                <span class="font-display font-black text-sm text-peach w-16">${timeStr}</span>
+                                <div class="space-y-0.5">
+                                    <div class="flex items-center gap-2">
+                                        <span class="font-bold text-sm text-slateDark">${booking.name}</span>
+                                        <span class="px-2 py-0.5 rounded-full bg-peach text-white text-[10px] font-extrabold">${booking.format}</span>
+                                    </div>
+                                    <div class="text-xs text-slateDark/75">
+                                        Связь: <strong>${booking.messenger || 'Telegram'}</strong> • Телефон: <strong>${booking.phone}</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2 self-start sm:self-auto">
+                                <a href="tel:${booking.phone}" class="px-3 py-1.5 rounded-xl bg-white border border-cream-300 text-xs font-bold text-slateDark hover:bg-cream-100">Позвонить</a>
+                                <button onclick="deleteBooking(${booking.id})" class="p-1.5 rounded-xl text-rose-500 hover:bg-rose-50 text-sm font-bold" title="Отменить">&times;</button>
+                            </div>
+                        `;
+                    }
+                } else {
+                    freeCount++;
+                    row.className += ' bg-emerald-50/50 border-emerald-200/70 hover:bg-emerald-50';
+                    row.innerHTML = `
+                        <div class="flex items-center gap-3">
+                            <span class="font-display font-black text-sm text-emerald-800 w-16">${timeStr}</span>
+                            <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 text-xs font-bold">Свободно</span>
+                            <span class="text-xs text-emerald-700 hidden sm:inline">Окно открыто для онлайн-записи</span>
+                        </div>
+                        <div class="flex items-center gap-2 self-start sm:self-auto">
+                            <button onclick="quickAddForSlot('${timeStr}')" class="px-3 py-1.5 rounded-xl bg-emerald-600 text-white font-bold text-xs hover:bg-emerald-700 shadow-sm">
+                                + Записать
+                            </button>
+                            <button onclick="quickBlockSlot('${timeStr}')" class="px-2.5 py-1.5 rounded-xl border border-slate-300 bg-white text-slate-600 font-bold text-xs hover:bg-slate-100">
+                                ⛔ Закрыть
+                            </button>
+                        </div>
+                    `;
+                }
+
+                container.appendChild(row);
+            }
+
+            document.getElementById('teacherDayLessonsCount').innerText = lessonsCount;
+            document.getElementById('teacherDayIncome').innerText = `${income.toLocaleString('ru-RU')} ₽`;
+            document.getElementById('teacherDayFreeSlots').innerText = freeCount;
+            lucide.createIcons();
+        }
+
+        function quickBlockSlot(timeStr) {
+            const startH = parseInt(timeStr.split(':')[0]);
+            const schedule = getSchedule();
+            schedule.push({
+                id: Date.now(),
+                date: teacherSelectedDateIso,
+                time: timeStr,
+                startMin: startH * 60,
+                duration: LESSON_DURATION,
+                name: 'Блокировка слота',
+                isBlocked: true
+            });
+            saveSchedule(schedule);
+            renderTeacherTimeline();
+        }
+
+        function unblockSlot(id) {
+            let schedule = getSchedule();
+            schedule = schedule.filter(b => b.id !== id);
+            saveSchedule(schedule);
+            renderTeacherTimeline();
+        }
+
+        function deleteBooking(id) {
+            if (!confirm('Отменить это занятие и освободить слот?')) return;
+            let schedule = getSchedule();
+            schedule = schedule.filter(b => b.id !== id);
+            saveSchedule(schedule);
+            renderTeacherTimeline();
+            renderTeacherAllBookings();
+        }
+
+        function renderTeacherAllBookings() {
+            const schedule = getSchedule().filter(b => !b.isBlocked);
+            document.getElementById('teacherTotalCount').innerText = schedule.length;
+            const container = document.getElementById('teacherAllBookingsList');
+
+            if (schedule.length === 0) {
+                container.innerHTML = '<div class="p-6 text-center text-xs text-slateDark/50">Список пуст</div>';
+                return;
+            }
+
+            container.innerHTML = schedule.map(b => `
+                <div class="p-3.5 rounded-2xl bg-cream-50 border border-cream-200 flex items-start justify-between gap-3 text-xs">
+                    <div>
+                        <div class="font-bold text-slateDark text-sm">${b.name} <span class="text-xs text-peach">(${b.grade ? b.grade + ' кл' : ''})</span></div>
+                        <div class="text-slateDark/80 mt-0.5"><strong>${b.date} в ${b.time}</strong> • ${b.format}</div>
+                        <div class="text-slateDark/60">Тел: ${b.phone} • Мессенджер: ${b.messenger || 'Telegram'}</div>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <a href="tel:${b.phone}" class="px-2.5 py-1.5 rounded-xl bg-white border border-cream-300 font-bold text-slateDark">Звонок</a>
+                        <button onclick="deleteBooking(${b.id})" class="p-1 rounded-lg text-rose-500 font-bold">&times;</button>
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        // Manual Add Modal
+        function openManualAddModal() {
+            document.getElementById('manualAddModal').classList.remove('hidden');
+            document.getElementById('manualAddModal').classList.add('flex');
+        }
+
+        function closeManualAddModal() {
+            document.getElementById('manualAddModal').classList.add('hidden');
+            document.getElementById('manualAddModal').classList.remove('flex');
+        }
+
+        function quickAddForSlot(timeStr) {
+            openManualAddModal();
+            document.getElementById('manualCustDateSelect').value = teacherSelectedDateIso;
+            document.getElementById('manualCustTimeSelect').value = timeStr;
+        }
+
+        function populateManualDateDropdowns() {
+            const dateSel = document.getElementById('manualCustDateSelect');
+            const timeSel = document.getElementById('manualCustTimeSelect');
+            dateSel.innerHTML = '';
+            timeSel.innerHTML = '';
+
+            for (let i = 0; i < 14; i++) {
+                const iso = getIso(i);
+                dateSel.innerHTML += `<option value="${iso}">${iso}</option>`;
+            }
+
+            for (let min = WORK_START; min < WORK_END; min += STEP_MIN) {
+                const t = minToTime(min);
+                timeSel.innerHTML += `<option value="${t}">${t}</option>`;
+            }
+        }
+
+        function saveManualStudentEntry() {
+            const name = document.getElementById('manualCustName').value.trim();
+            const phone = document.getElementById('manualCustPhone').value.trim() || '—';
+            const format = document.getElementById('manualCustFormat').value;
+            const date = document.getElementById('manualCustDateSelect').value;
+            const time = document.getElementById('manualCustTimeSelect').value;
+
+            if (!name) return alert('Укажите имя ученика');
+            const startH = parseInt(time.split(':')[0]);
+
+            const schedule = getSchedule();
+            schedule.push({
+                id: Date.now(),
+                date: date,
+                time: time,
+                startMin: startH * 60,
+                duration: LESSON_DURATION,
+                name: name,
+                phone: phone,
+                format: format,
+                price: format.includes('900') ? 900 : format.includes('1 100') ? 1100 : 1600,
+                messenger: 'Личная запись',
+                isBlocked: false,
+                created: new Date().toLocaleString('ru-RU')
+            });
+
+            saveSchedule(schedule);
+            closeManualAddModal();
+            renderTeacherTimeline();
+            renderTeacherAllBookings();
+            alert('Ученик успешно внесён в расписание!');
+        }
+
+        function exportTeacherCalendarAll() {
+            const schedule = getSchedule().filter(b => !b.isBlocked);
+            if (schedule.length === 0) return alert('Расписание пока пусто');
+            const b = schedule[0];
+            const startStr = `${b.date.replace(/-/g, '')}T${b.time.replace(':', '')}00`;
+            const endH = String(parseInt(b.time.split(':')[0]) + 1).padStart(2, '0');
+            const endStr = `${b.date.replace(/-/g, '')}T${endH}0000`;
+            window.open(`https://calendar.yandex.ru/custom-event?name=${encodeURIComponent('Расписание уроков Марии')}&start_ts=${startStr}&end_ts=${endStr}`, '_blank');
+        }
+    </script>
+</body>
+</html>
+
