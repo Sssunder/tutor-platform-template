@@ -1,0 +1,62 @@
+{
+  "site": {
+    "slug": "new-client",
+    "supabaseUrl": "https://ngsonqwylcwcziwxurkc.supabase.co",
+    "supabaseKey": "sb_publishable_yW45_DoFX6OHfZHYYNcStA_tRDiM_z_"
+  },
+  "teacher": {
+    "name": "Имя Фамилия",
+    "shortName": "Имя",
+    "initials": "ИФ",
+    "subject": "Предмет и направление",
+    "subtitle": "Предмет • классы/аудитория",
+    "targetAudience": "5–9 классы • ОГЭ",
+    "experienceYears": "5+",
+    "resultsStat": "4.8",
+    "headline": "Главный оффер одной строкой",
+    "heroDescription": "1–2 предложения о подходе: что получает ученик, как проходят занятия и какой результат ожидается."
+  },
+  "contacts": {
+    "phone": "+7 900 000 00 00",
+    "phoneRaw": "+79000000000",
+    "maxUrl": "https://max.ru/u/+79000000000",
+    "telegramHandle": "@username",
+    "telegramUrl": "https://t.me/username",
+    "avitoUrl": "",
+    "reviewsChannelUrl": ""
+  },
+  "theme": {
+    "default": "cozy-cat"
+  },
+  "admin": {
+    "pinCode": "1234"
+  },
+  "programs": [
+    {
+      "id": "main_format",
+      "title": "Основной формат занятий",
+      "badge": "Хит",
+      "price": 1500,
+      "duration": "60 мин",
+      "desc": "Что входит в занятие, для кого подходит и какой результат даёт.",
+      "hidden": false
+    },
+    {
+      "id": "mini_group",
+      "title": "Мини-группа (2–4 ученика)",
+      "price": 1000,
+      "duration": "60 мин",
+      "desc": "Описание группового формата: состав, темп и выгода по цене.",
+      "hidden": false
+    },
+    {
+      "id": "diagnostic",
+      "title": "Диагностика и план подготовки",
+      "badge": "Старт",
+      "price": 700,
+      "duration": "45 мин",
+      "desc": "Оценка текущего уровня, пробелы и персональная дорожная карта.",
+      "hidden": false
+    }
+  ]
+}

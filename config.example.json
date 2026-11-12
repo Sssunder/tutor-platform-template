@@ -1,4 +1,9 @@
 {
+  "site": {
+    "slug": "maria-math",
+    "supabaseUrl": "https://ngsonqwylcwcziwxurkc.supabase.co",
+    "supabaseKey": "sb_publishable_yW45_DoFX6OHfZHYYNcStA_tRDiM_z_"
+  },
   "teacher": {
     "name": "Мария Дружинина",
     "shortName": "Мария",
@@ -20,7 +25,12 @@
     "phoneRaw": "+79195784289",
     "maxUrl": "https://max.ru/u/+79195784289",
     "telegramHandle": "@mm_kami",
-    "telegramUrl": "https://t.me/mm_kami"
+    "telegramUrl": "https://t.me/mm_kami",
+    "avitoUrl": "",
+    "reviewsChannelUrl": ""
+  },
+  "theme": {
+    "default": "cozy-cat"
   },
   "admin": {
     "pinCode": "1234"

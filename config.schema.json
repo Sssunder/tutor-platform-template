@@ -4,6 +4,14 @@
   "type": "object",
   "required": ["teacher", "contacts", "admin", "programs"],
   "properties": {
+    "site": {
+      "type": "object",
+      "properties": {
+        "slug": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "supabaseUrl": { "type": "string" },
+        "supabaseKey": { "type": "string" }
+      }
+    },
     "teacher": {
       "type": "object",
       "required": ["name", "initials", "subject", "subtitle", "targetAudience"],
@@ -26,7 +34,15 @@
         "phoneRaw": { "type": "string" },
         "maxUrl": { "type": "string" },
         "telegramHandle": { "type": "string" },
-        "telegramUrl": { "type": "string" }
+        "telegramUrl": { "type": "string" },
+        "avitoUrl": { "type": "string" },
+        "reviewsChannelUrl": { "type": "string" }
+      }
+    },
+    "theme": {
+      "type": "object",
+      "properties": {
+        "default": { "type": "string", "enum": ["cozy-cat", "sakura", "artek", "cyber"] }
       }
     },
     "admin": {
@@ -47,7 +63,8 @@
           "title": { "type": "string" },
           "price": { "type": "number" },
           "duration": { "type": "string" },
-          "desc": { "type": "string" }
+          "desc": { "type": "string" },
+          "hidden": { "type": "boolean" }
         }
       }
     }
