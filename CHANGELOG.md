@@ -1,5 +1,9 @@
 # Changelog — tutor-platform-template
 
+## 2026-11-12 — Fix invisible sticky-bar toggle text in light themes (pushed)
+- Same scoped `#teacherStickyBar #toggleViewBtn` override as maria-math so the dark admin bar's toggle stays translucent-white + white text in every theme (universal `[class*="bg-white"]` binding no longer makes it white-on-white).
+- `python verify.py` → **PASS**. Pushed to origin/master. `dist/index.html` not regenerated.
+
 ## 2026-11-12 — Obvious «Пройти обучение заново» button + post-skip hint baked into template.html
 - Faint «Экскурсия» pill → prominent white «Пройти обучение заново» in cabinet tab bar; on skip (Пропустить/Esc) a ~6s bottom toast + button pulse point back to it (toast `pointer-events:none`), so an accidental skip is recoverable.
 - `python verify.py` → **PASS**. `dist/index.html` not regenerated.
